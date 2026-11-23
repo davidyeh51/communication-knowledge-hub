@@ -1,0 +1,166 @@
+{
+  "version": "1.0.0",
+  "portalName": "溝通交流知識庫",
+  "portalEnglish": "Communication & Dialogue Knowledge Hub",
+  "tagline": "以麥肯錫結構化思維萃取溝通經典，打造個人與團隊共用、可即時檢索與持續擴充的對話智庫",
+  "audience": "個人修煉 ✕ 團隊協作 ✕ 跨部門對齊",
+  "updatedAt": "2026-11-23",
+  "categories": [
+    { "id": "all", "name": "全部主題", "icon": "grid" },
+    { "id": "principles", "name": "核心原則與衝突管理", "icon": "compass" },
+    { "id": "listening", "name": "傾聽與影響力信譽", "icon": "ear" },
+    { "id": "rapport", "name": "人際破冰與社交細節", "icon": "spark" },
+    { "id": "negotiation", "name": "高難度談判與協作", "icon": "scale" }
+  ],
+  "hotKeywords": [
+    "知識詛咒",
+    "TKI 衝突模型",
+    "策略性模糊",
+    "交易成本",
+    "安全感結餘",
+    "情緒標記",
+    "四步修復",
+    "一分鐘四問",
+    "大事不多",
+    "以直報怨",
+    "解碼成本",
+    "陳燕萍",
+    "費翔"
+  ],
+  "books": [
+    {
+      "id": "book-001",
+      "slug": "principles-of-communication",
+      "code": "COMM-01",
+      "title": "《溝通的原則》",
+      "subtitle": "如何讓對話直抵人心",
+      "author": "熊浩（復旦大學法學院教授）",
+      "sourceMeta": "湖南文藝出版社（2025.09）｜得到親述 29 分 45 秒",
+      "category": "principles",
+      "categoryLabel": "核心原則與衝突管理",
+      "status": "ready",
+      "badge": "旗艦完整簡報",
+      "readingTime": "10 分鐘導讀",
+      "slidesCount": 15,
+      "svgCount": 13,
+      "coverImage": "assets/images/book-principles-cover-art.jpg",
+      "deckUrl": "decks/principles-of-communication.html",
+      "publishedDate": "2026-11-23",
+      "coreThesis": "高壓現場大腦負荷極小，「話術中心」必然失靈；唯有掌握「清晰、友善、應變、重啟」四條極簡原則，方能降低交易成本並讓對話直抵人心。",
+      "keyPillars": [
+        { "label": "清晰", "desc": "穿透知識詛咒與心理防禦，算清解碼成本" },
+        { "label": "友善", "desc": "以安全感結餘先行施惠，覺知需求、召喚善意" },
+        { "label": "應變", "desc": "以直報怨，透過 TKI 模型與感覺-驗證-選擇動態調適" },
+        { "label": "重啟", "desc": "停止讓過去壟斷未來，以雙重鏡頭與四步修復重設條件" }
+      ],
+      "teamActions": [
+        {
+          "key": "comm01-precheck",
+          "title": "重要會議前 1 分鐘完成「四問快篩」",
+          "desc": "發言前逐一確認：核心意圖是否清晰？對方期待為何？該推進/讓步/暫停？若搞砸如何修復？",
+          "owner": "個人＆團隊"
+        },
+        {
+          "key": "comm01-clarity-audit",
+          "title": "消除專案會議「含混代詞」",
+          "desc": "將「盡快、協同、創新、上次標準」全面翻譯為具體交付物、截止日與責任人，主動承擔清晰的代價。",
+          "owner": "團隊協作"
+        },
+        {
+          "key": "comm01-four-step-repair",
+          "title": "以「四步修復公式」取代無效道歉",
+          "desc": "衝突發生時拒絕「對不起讓你不高興了」，改以「擔責 → 承認感受 → 具體補救防重演 → 面向未來」完成重啟。",
+          "owner": "個人＆主管"
+        }
+      ],
+      "modules": [
+        { "range": "P01–P03", "name": "破題與全書骨架", "desc": "四原則閉環架構與話術失靈之大腦負荷診斷" },
+        { "range": "P04–P05", "name": "破除四大誤會與本質", "desc": "需求驅動、衝突真實性、科斯交易成本與大事不多" },
+        { "range": "P06–P07", "name": "原則一：清晰", "desc": "知識詛咒、心理防禦、策略性模糊與解碼成本" },
+        { "range": "P08–P09", "name": "原則二：友善", "desc": "安全感結餘、互惠先行、三大情緒需求與召喚效應" },
+        { "range": "P10–P11", "name": "原則三：應變", "desc": "以直報怨、TKI 五維模型與感覺-驗證-選擇三步曲" },
+        { "range": "P12–P13", "name": "原則四：重啟", "desc": "情緒標記、時間/敘事雙鏡頭與四步修復公式" },
+        { "range": "P14–P15", "name": "脈絡串聯與落地行動", "desc": "四道關口因果鏈、太極忘招哲思與一分鐘四問" }
+      ]
+    },
+    {
+      "id": "book-002",
+      "slug": "five-levels-of-listening",
+      "code": "COMM-02",
+      "title": "《溝通的黃金法則》",
+      "subtitle": "「聽話」的五個層次：溝通信譽的階梯",
+      "author": "約翰・麥斯威爾（John C. Maxwell）",
+      "sourceMeta": "天下雜誌書摘｜本地知識庫已收錄原文筆記",
+      "category": "listening",
+      "categoryLabel": "傾聽與影響力信譽",
+      "status": "planned",
+      "badge": "預留擴充插槽",
+      "readingTime": "規劃中（10 分鐘版）",
+      "slidesCount": 12,
+      "svgCount": 8,
+      "coverImage": "",
+      "deckUrl": "#",
+      "publishedDate": "待製作",
+      "coreThesis": "人們願不願意聽你說話，取決於五層信譽階梯——關係永遠先於技巧，在人們知道你有多在乎之前，他們不在乎你知道多少。",
+      "keyPillars": [
+        { "label": "關係先於技巧", "desc": "第 2 層關係排在第 3 層卓越之前" },
+        { "label": "信譽六步", "desc": "找到→了解→做自己→提升→超越→奉獻自己" },
+        { "label": "道德權威", "desc": "最有效的訊息是你身體力行的訊息" }
+      ],
+      "teamActions": [],
+      "modules": []
+    },
+    {
+      "id": "book-003",
+      "slug": "ten-comfortable-chat-details",
+      "code": "COMM-03",
+      "title": "《相處舒服的 10 個聊天細節》",
+      "subtitle": "從「只談正事」到建立高好感度的人際脈絡複利",
+      "author": "商業周刊職場專欄（Sofia 的人生筆記）",
+      "sourceMeta": "本地知識庫已收錄原文筆記",
+      "category": "rapport",
+      "categoryLabel": "人際破冰與社交細節",
+      "status": "planned",
+      "badge": "預留擴充插槽",
+      "readingTime": "規劃中（10 分鐘版）",
+      "slidesCount": 12,
+      "svgCount": 6,
+      "coverImage": "",
+      "deckUrl": "#",
+      "publishedDate": "待製作",
+      "coreThesis": "讓人喜歡的核心不在口才熟練，而在將注意力真正放在對方身上：不讓話掉地上、記住偏好、不滑手機與把光環讓給他人。",
+      "keyPillars": [
+        { "label": "專注在場", "desc": "收起手機、眼神回應、不搶話不批判" },
+        { "label": "脈絡複利", "desc": "記得對方提過的喜好與近況，累積信任資產" }
+      ],
+      "teamActions": [],
+      "modules": []
+    },
+    {
+      "id": "book-004",
+      "slug": "workplace-small-talk-introvert",
+      "code": "COMM-04",
+      "title": "《職場 Small Talk 的 3 個接話技巧》",
+      "subtitle": "內向者（I 人）也能在職場自然破冰與延續對話的結構法則",
+      "author": "遠見雜誌職場專題",
+      "sourceMeta": "本地知識庫已收錄原文筆記",
+      "category": "rapport",
+      "categoryLabel": "人際破冰與社交細節",
+      "status": "planned",
+      "badge": "預留擴充插槽",
+      "readingTime": "規劃中（10 分鐘版）",
+      "slidesCount": 12,
+      "svgCount": 6,
+      "coverImage": "",
+      "deckUrl": "#",
+      "publishedDate": "待製作",
+      "coreThesis": "內向者不需要硬演成外向者，只需運用可複製的接話與追問結構，就能在非正式場合建立高質感職場連結。",
+      "keyPillars": [
+        { "label": "結構破冰", "desc": "降低社交耗能的可重複接話公式" },
+        { "label": "精準提問", "desc": "把話題球自然交給對方，展現高傾聽品質" }
+      ],
+      "teamActions": [],
+      "modules": []
+    }
+  ]
+}

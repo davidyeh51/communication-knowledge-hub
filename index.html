@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>溝通交流知識庫｜麥肯錫結構化簡報 ✕ 個人與團隊共學智庫</title>
+  <meta name="description" content="專為自己與團隊成員打造的溝通交流知識庫：麥肯錫顧問架構 10 分鐘導讀簡報、原創 SVG 模型圖解、全域關鍵字即時檢索與 Supabase 團隊實踐同步。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/portal.css" />
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#top" class="brand">
+        <div class="brand-mark">通</div>
+        <div class="brand-text">
+          <span class="brand-title">溝通交流知識庫</span>
+          <span class="brand-sub">Communication Knowledge Hub</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="主導覽">
+        <a href="#library">書籍與簡報庫</a>
+        <a href="#precheck">一分鐘四問工具</a>
+        <a href="#team-hub">團隊實踐 ✕ Supabase</a>
+        <a href="docs/EXPANSION.md" target="_blank">擴充架構指南</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="btn-search-trigger" id="top-search-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <span>快速檢索</span>
+          <span class="kbd">Ctrl K</span>
+        </button>
+        <button type="button" class="btn-auth" id="auth-open-btn">
+          <span class="sync-dot" id="sync-dot"></span>
+          <span id="auth-btn-label">團隊登入 / Supabase</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-eyebrow">
+          <span>McKINSEY STRUCTURED PLAYBOOK</span>
+          <span>·</span>
+          <span>個人修煉 ✕ 團隊協作</span>
+        </div>
+        <h1>讓每一次關鍵對話，都能<span>清晰、友善、直抵人心</span></h1>
+        <p class="hero-lead">
+          以麥肯錫金字塔原理與 MECE 架構系統化萃取溝通經典，搭配 10 分鐘 16:9 簡報、原創向量 SVG 圖解、全域即時關鍵字檢索與可持續擴充的書庫框架，隨時供自己與團隊成員調閱實戰。
+        </p>
+
+        <div class="book-cta-row">
+          <a href="decks/principles-of-communication.html" class="btn-gold">
+            立即閱讀旗艦簡報：《溝通的原則》 →
+          </a>
+          <a href="#precheck" class="btn-search-trigger" style="padding:12px 18px;font-size:14px;">
+            開啟「一分鐘發言前四問」
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-val" id="stat-books">1<em>/ 4 席位</em></span>
+            <span class="stat-label">書庫上架 / 預留擴充</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val" id="stat-slides">15<em>頁</em></span>
+            <span class="stat-label">10 分鐘麥肯錫簡報</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val" id="stat-svgs">13+<em>張</em></span>
+            <span class="stat-label">原創 SVG 結構圖解</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val" id="stat-keywords">18<em>條索引</em></span>
+            <span class="stat-label">跨書精準跳頁檢索</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual-card">
+        <img src="assets/images/hero-dialogue-bridge.jpg" alt="直抵人心：溝通四原則光橋主題插圖（重新繪製）" />
+        <div class="hero-visual-caption">
+          <span><strong>四道動態關口：</strong>清晰 · 友善 · 應變 · 重啟</span>
+          <span>原創重繪視覺</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Keyword Search Panel -->
+  <section class="search-hub" aria-label="全域關鍵字檢索">
+    <div class="container">
+      <div class="search-panel">
+        <div class="search-bar-wrap">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          <input
+            type="search"
+            id="global-search-input"
+            class="search-input"
+            placeholder="輸入關鍵字即時跨書檢索（例：知識詛咒、TKI、策略性模糊、交易成本、四步修復、陳燕萍、費翔）..."
+            autocomplete="off"
+          />
+          <button type="button" id="search-clear-btn" class="search-clear">清除</button>
+        </div>
+
+        <div class="hot-tags" id="hot-tags"></div>
+
+        <div class="search-results-box" id="search-results-box">
+          <div class="search-meta" id="search-meta"></div>
+          <div class="search-results-list" id="search-results-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Library Section -->
+  <section class="section" id="library">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">STRUCTURED KNOWLEDGE LIBRARY</div>
+          <h2 class="section-title">書籍與資料簡報總覽（可擴充模組化架構）</h2>
+        </div>
+        <div class="category-tabs" id="category-tabs"></div>
+      </div>
+
+      <!-- Featured / Ready Books -->
+      <div id="featured-books-wrap"></div>
+
+      <!-- Planned / Expandable Book Slots -->
+      <div style="margin-top:34px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+        <h3 style="margin:0;font-size:16px;color:#334155;">預留擴充書庫路線圖（Roadmap &amp; Expansion Slots）</h3>
+        <span style="font-size:12.5px;color:#64748B;">首頁資料完全由 <code>data/library.json</code> 與 <code>data/search-index.json</code> 驅動，新增書目零重構</span>
+      </div>
+      <div class="books-grid" id="planned-books-grid"></div>
+    </div>
+  </section>
+
+  <!-- Interactive 1-Minute Pre-Dialogue Tool -->
+  <section class="section tool-band" id="precheck">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">IMMEDIATE APPLICATION TOOL</div>
+          <h2 class="section-title">重要對話前「一分鐘四問」互動快篩器</h2>
+        </div>
+        <div style="font-size:13px;color:#475569;">取自《溝通的原則》熊浩親述結語：重要發言前 1–2 分鐘過四題，穩住自己、找到方向</div>
+      </div>
+
+      <div class="form-group" style="max-width:460px;margin-bottom:18px;">
+        <label for="pq-topic">本次即將面對的對話／會議主題</label>
+        <input type="text" id="pq-topic" class="form-control" placeholder="例如：跨部門專案對齊會、客戶異常協調、一對一績效回饋" />
+      </div>
+
+      <div class="precheck-grid">
+        <div class="precheck-card">
+          <div class="precheck-head">
+            <span class="precheck-num">1</span>
+            <span class="precheck-q">【清晰】我的核心意圖是什麼？哪句話最可能被誤會？</span>
+          </div>
+          <textarea id="pq-1" placeholder="寫下具體交付標準、時間點與責任邊界，避開「盡快、協同、上次標準」等含混代詞..."></textarea>
+        </div>
+
+        <div class="precheck-card">
+          <div class="precheck-head">
+            <span class="precheck-num">2</span>
+            <span class="precheck-q">【友善】對方的核心期待與需求是什麼？我能先釋放什麼善意？</span>
+          </div>
+          <textarea id="pq-2" placeholder="對方此刻最需要「被看重 / 有歸屬 / 能做主」哪一項？我如何先給予肯定或選擇權？"></textarea>
+        </div>
+
+        <div class="precheck-card">
+          <div class="precheck-head">
+            <span class="precheck-num">3</span>
+            <span class="precheck-q">【應變】現在這個情勢，我該推進、讓步、暫停還是共創？</span>
+          </div>
+          <textarea id="pq-3" placeholder="準備一句「驗證式提問」（我不確定有沒有理解對，你最擔心的是...對嗎？），再決定 TKI 策略..."></textarea>
+        </div>
+
+        <div class="precheck-card">
+          <div class="precheck-head">
+            <span class="precheck-num">4</span>
+            <span class="precheck-q">【重啟】萬一這次談砸了，我如何用「四步修復」清理現場？</span>
+          </div>
+          <textarea id="pq-4" placeholder="先備妥底線與修復劇本：承認感受 → 說清責任 → 具體補救防重演 → 說明未來關係條件..."></textarea>
+        </div>
+      </div>
+
+      <div class="precheck-actions">
+        <button type="button" class="btn-primary" id="save-precheck-btn">
+          儲存本次預演至團隊實踐紀錄（支援 Supabase 同步）
+        </button>
+        <span class="status-msg" id="precheck-msg"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Practice & Supabase Integration Hub -->
+  <section class="section" id="team-hub">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <div class="section-kicker">TEAM LEARNING ✕ SUPABASE BAAS</div>
+          <h2 class="section-title">個人與團隊共學實踐面板</h2>
+        </div>
+        <span class="pill pill-slate" id="sync-status-badge">本機暫存模式（登入可雲端同步）</span>
+      </div>
+
+      <div class="collab-grid">
+        <!-- Left Column: Action Checkins + Note Composer -->
+        <div style="display:grid;gap:20px;">
+          <div class="panel-card">
+            <h3 class="panel-title">
+              <span>《溝通的原則》團隊落地行動打卡</span>
+              <span style="font-size:12px;color:#64748B;font-weight:500;">勾選即自動存檔</span>
+            </h3>
+            <div id="action-checkins-list"></div>
+          </div>
+
+          <div class="panel-card">
+            <h3 class="panel-title">新增團隊心得 / 職場對話復盤</h3>
+            <form id="team-note-form">
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="note-author">紀錄者姓名 / 暱稱</label>
+                  <input type="text" id="note-author" class="form-control" placeholder="例如：David / 專案組小陳" required />
+                </div>
+                <div class="form-group">
+                  <label for="note-category">分類標籤</label>
+                  <select id="note-category" class="form-control">
+                    <option value="實戰心得">實戰心得</option>
+                    <option value="團隊案例">團隊案例</option>
+                    <option value="一分鐘四問預演">一分鐘四問預演</option>
+                    <option value="金句摘錄">金句摘錄</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="note-title">標題（一句行動結論）</label>
+                  <input type="text" id="note-title" class="form-control" placeholder="例如：跨部門週會取消『盡快』改標具體交付日" required />
+                </div>
+                <div class="form-group">
+                  <label for="note-slide">對應頁碼（選填 1-15）</label>
+                  <input type="number" id="note-slide" class="form-control" min="1" max="15" placeholder="例如：6" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="note-content">情境還原與反思內容</label>
+                <textarea id="note-content" class="form-control" rows="4" placeholder="記錄遇到的溝通場景、套用的原則與結果反饋..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="width:100%;justify-content:center;">發佈筆記（本機 / Supabase 同步）</button>
+              <div class="status-msg" id="note-form-msg"></div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right Column: Shared Notes Feed -->
+        <div class="panel-card">
+          <h3 class="panel-title">
+            <span>共學實踐紀錄流</span>
+            <span style="font-size:12px;color:#64748B;font-weight:500;">RLS 行級安全保護</span>
+          </h3>
+          <p style="margin:0 0 12px;font-size:13px;color:#64748B;">
+            未登入時資料安全儲存在您的瀏覽器本機；點擊右上角「團隊登入 / Supabase」驗證後，即可與團隊成員共享案例並跨裝置即時同步。
+          </p>
+          <div class="notes-list" id="team-notes-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>溝通交流知識庫 (Communication &amp; Dialogue Knowledge Hub)</strong><br />
+        麥肯錫顧問結構化導讀 ✕ 原創 SVG 圖表 ✕ GitHub Pages ✕ Supabase BaaS（嚴守零私鑰與 RLS 安全規範）
+      </div>
+      <div style="text-align:right;">
+        首部旗艦書目：《溝通的原則》（熊浩 親述）<br />
+        版本 v1.0 ｜ 建立日期 2026-11-23
+      </div>
+    </div>
+  </footer>
+
+  <!-- Supabase Auth & Setup Modal -->
+  <div class="modal-backdrop" id="auth-modal" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-head">
+        <h3 id="auth-modal-title">團隊帳號登入 ✕ Supabase 雲端同步</h3>
+        <button type="button" class="modal-close" id="auth-modal-close" aria-label="關閉">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="notice-box">
+          <strong>安全架構說明：</strong>本站部署於 GitHub Pages 純前端環境，僅使用公開 <code>anon key</code> 連線至 Supabase，後端全面啟用 PostgreSQL <strong>Row Level Security (RLS)</strong>，僅登入之團隊成員可讀寫雲端共學資料。
+        </div>
+
+        <div id="auth-form-box">
+          <div class="form-group">
+            <label for="auth-email">團隊 Email</label>
+            <input type="email" id="auth-email" class="form-control" placeholder="name@example.com" />
+          </div>
+          <div class="form-group">
+            <label for="auth-password">密碼（至少 6 碼）</label>
+            <input type="password" id="auth-password" class="form-control" placeholder="••••••••" />
+          </div>
+          <div style="display:flex;gap:10px;margin-top:14px;">
+            <button type="button" class="btn-primary" id="auth-login-submit" style="flex:1;justify-content:center;">登入同步</button>
+            <button type="button" class="btn-gold" id="auth-signup-submit" style="flex:1;justify-content:center;">註冊新成員</button>
+          </div>
+        </div>
+
+        <div id="auth-logged-in-box" style="display:none;">
+          <p style="margin:0 0 12px;font-size:14px;">目前登入身份：<strong id="auth-user-email"></strong></p>
+          <button type="button" class="btn-primary" id="auth-logout-btn" style="background:#B91C1C;">登出帳號</button>
+        </div>
+
+        <hr style="border:none;border-top:1px solid #E2E8F0;margin:18px 0;" />
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;">
+          <span style="font-size:12px;color:#64748B;">首次啟用雲端資料表？請於 Supabase SQL Editor 執行建表腳本：</span>
+          <button type="button" class="hot-chip" id="copy-sql-btn">複製 supabase/schema.sql</button>
+        </div>
+        <div class="status-msg" id="auth-msg"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Supabase JS v2 CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="assets/js/supabase-sync.js"></script>
+  <script src="assets/js/portal.js"></script>
+</body>
+</html>

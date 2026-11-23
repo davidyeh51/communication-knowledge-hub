@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>《溝通的原則》熊浩親述｜麥肯錫 10 分鐘精華簡報（15 頁）</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/deck.css" />
+</head>
+<body>
+  <!-- Top Toolbar -->
+  <header class="deck-topbar">
+    <div class="deck-left">
+      <a href="../index.html" class="btn-back-home">← 返回知識庫首頁</a>
+      <div class="deck-title-bar">
+        <span>COMM-01</span>《溝通的原則》熊浩親述 · 麥肯錫 10 分鐘導讀簡報
+      </div>
+    </div>
+
+    <div class="deck-controls">
+      <button type="button" class="timer-pill" id="timer-pill" title="點擊開始/暫停 10 分鐘計時（雙擊重置）">⏱ 10:00</button>
+      <span class="slide-counter" id="slide-counter">01 / 15</span>
+      <button type="button" class="ctrl-btn" id="btn-notes" title="快捷鍵 N">講稿 (N)</button>
+      <button type="button" class="ctrl-btn" id="btn-grid" title="快捷鍵 G">總覽/頁內搜尋 (G)</button>
+      <button type="button" class="ctrl-btn" id="btn-fs" title="快捷鍵 F">全螢幕 (F)</button>
+      <button type="button" class="ctrl-btn" id="btn-print" title="列印或匯出 PDF">列印 / PDF</button>
+    </div>
+  </header>
+
+  <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+
+  <!-- Navigation Arrows -->
+  <button type="button" class="nav-arrow nav-prev" id="btn-prev" aria-label="上一頁">‹</button>
+  <button type="button" class="nav-arrow nav-next" id="btn-next" aria-label="下一頁">›</button>
+
+  <!-- Main 16:9 Scaled Stage -->
+  <main class="stage-wrapper" id="stage-wrapper">
+    <div class="stage-scaler" id="stage-scaler">
+
+      <!-- ================================================================
+           SLIDE 01 : 封面
+           ================================================================ -->
+      <section class="slide slide-cover active"
+        data-kicker="COVER · 麥肯錫 10 分鐘精華導讀"
+        data-title="《溝通的原則》如何讓對話直抵人心"
+        data-note-conclusion="這是一場為個人修煉與團隊協作設計的 10 分鐘導讀：用「清晰、友善、應變、重啟」四條極簡原則，取代複雜卻用不上的話術。"
+        data-note-evidence="來源為復旦大學法學院熊浩教授親述其 2025 年 9 月出版作品《溝通的原則：如何讓對話直抵人心》（得到音訊 29 分 45 秒）。全書根植於「衝突管理」學科——在最難的壓力現場管用的原則，日常溝通更不會出錯。"
+        data-note-transition="在深入每一條原則之前，讓我們先用一頁鳥瞰全書的整體邏輯骨架。">
+        <div class="cover-grid">
+          <div>
+            <div class="cover-tag">COMMUNICATION KNOWLEDGE HUB · COMM-01 · 10 MIN BRIEFING</div>
+            <h1 class="cover-title">溝通的原則</h1>
+            <p class="cover-subtitle">如何讓對話直抵人心</p>
+            <div class="cover-thesis">
+              高壓情境下大腦負荷極小，「話術中心」必然失靈。本書從衝突管理出發，凝練出四條極簡原則，讓個人與團隊在任何對話中穩住自己、降低交易成本、直抵人心。
+            </div>
+            <div class="cover-four-badges">
+              <div class="cover-badge"><strong>01 清晰</strong><span>減少誤解</span></div>
+              <div class="cover-badge"><strong>02 友善</strong><span>降低防禦</span></div>
+              <div class="cover-badge"><strong>03 應變</strong><span>匹配情勢</span></div>
+              <div class="cover-badge"><strong>04 重啟</strong><span>清理舊現場</span></div>
+            </div>
+            <div style="margin-top:26px;font-size:13px;color:rgba(255,255,255,0.65);display:flex;gap:18px;flex-wrap:wrap;">
+              <span>原著／親述：熊浩（復旦大學法學院）</span>
+              <span>｜</span>
+              <span>出版：湖南文藝出版社（2025.09）</span>
+              <span>｜</span>
+              <span>結構化萃取：麥肯錫顧問簡報體系</span>
+            </div>
+          </div>
+
+          <div class="cover-book-mockup">
+            <img src="../assets/images/book-principles-cover-art.jpg" alt="《溝通的原則》重新繪製典藏封面插畫" />
+            <div class="cover-book-scrim"></div>
+            <div class="cover-book-top">
+              <div style="font-size:11px;letter-spacing:0.22em;color:#E0A84B;border-bottom:1px solid rgba(224,168,75,0.45);padding-bottom:6px;margin-bottom:12px;">PRINCIPLES OF COMMUNICATION</div>
+              <div style="font-family:'Noto Serif TC',serif;font-size:36px;font-weight:700;letter-spacing:0.1em;line-height:1.2;">溝通的原則</div>
+              <div style="font-size:13px;color:rgba(255,255,255,0.82);letter-spacing:0.14em;margin-top:6px;">如何讓對話直抵人心</div>
+            </div>
+            <div class="cover-book-bottom" style="display:flex;justify-content:space-between;align-items:flex-end;border-top:1px solid rgba(255,255,255,0.2);padding-top:12px;font-size:13px;">
+              <div><strong>熊浩</strong> 著 · 親述</div>
+              <div style="color:#E0A84B;font-weight:700;">重繪典藏視覺</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 02 : 全書邏輯骨架圖
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="01 · 全書架構圖"
+        data-title="全書構築「拆誤會→立原則→成閉環」架構：以四道動態關口取代僵化招式"
+        data-note-conclusion="整本書不是零散的話術合集，而是一套「先正地基、再過三關、失控重啟回環」的動態作業系統。"
+        data-note-evidence="熊浩強調：若地基是歪的（抱持溝通萬能或溝通等於說話等誤會），上面蓋什麼都白搭。因此先拆四個誤會、確立『降低交易成本』的定位，再進入清晰、友善、應變，出錯則由重啟清理現場並回到前三原則。"
+        data-note-transition="接下來我們看一個職場最熟悉的場景，理解為什麼傳統「話術中心」的溝通課在關鍵時刻總會失靈。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">01 · BOOK ARCHITECTURE · 全書邏輯骨架</span>
+            <span class="slide-pacing">建議節奏 00:40–01:20</span>
+          </div>
+          <h2 class="action-title">全書構築「拆誤會→立原則→成閉環」架構：以<em>四道動態關口</em>取代僵化話術</h2>
+        </div>
+
+        <div class="slide-body">
+          <div class="svg-box" style="flex:1;padding:16px;">
+            <svg viewBox="0 0 1140 440" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <defs>
+                <marker id="arr-navy" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                  <path d="M0,1 L9,5 L0,9 z" fill="#0B1F3A"/>
+                </marker>
+                <marker id="arr-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                  <path d="M0,1 L9,5 L0,9 z" fill="#C88A2E"/>
+                </marker>
+              </defs>
+
+              <!-- Foundation Layer -->
+              <rect x="20" y="20" width="1100" height="82" rx="10" fill="#F1F5F9" stroke="#0B1F3A" stroke-width="2"/>
+              <rect x="20" y="20" width="170" height="82" rx="10" fill="#0B1F3A"/>
+              <text x="105" y="56" text-anchor="middle" fill="#E0A84B" font-size="13" font-weight="700">地基校準 (P03–P05)</text>
+              <text x="105" y="79" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">破除四大誤會</text>
+
+              <text x="215" y="52" fill="#0B1F3A" font-size="15" font-weight="700">拆掉歪斜地基：溝通 ≠ 說話 ｜ 話多 ≠ 會溝通 ｜ 衝突非壞事 ｜ 溝通非萬能</text>
+              <text x="215" y="79" fill="#475569" font-size="13.5">核心經濟定位：降低科斯「交易成本」（搜尋／談判／信任／鑑定） ＋ 注意力邊界「大事不多」</text>
+
+              <!-- Arrow down from foundation -->
+              <line x1="570" y1="102" x2="570" y2="138" stroke="#0B1F3A" stroke-width="2.5" marker-end="url(#arr-navy)"/>
+
+              <!-- Four Principles Flow -->
+              <!-- Gate 1 -->
+              <rect x="20" y="148" width="248" height="186" rx="12" fill="#FFFFFF" stroke="#0B1F3A" stroke-width="2"/>
+              <rect x="20" y="148" width="248" height="44" rx="10" fill="#0B1F3A"/>
+              <text x="144" y="176" text-anchor="middle" fill="#FFFFFF" font-size="17" font-weight="700">關口一：清晰 (P06–07)</text>
+              <text x="144" y="214" text-anchor="middle" fill="#C88A2E" font-size="14" font-weight="700">核心功能：減少誤解</text>
+              <text x="38" y="242" fill="#334155" font-size="13">• 穿透知識詛咒與守夜人腦補</text>
+              <text x="38" y="266" fill="#334155" font-size="13">• 克服心理防禦、敢於達意</text>
+              <text x="38" y="290" fill="#334155" font-size="13">• 辨識策略性模糊與解碼成本</text>
+              <text x="38" y="318" fill="#64748B" font-size="12" font-weight="700">檢核：發出與收到訊號一致嗎？</text>
+
+              <line x1="268" y1="240" x2="300" y2="240" stroke="#0B1F3A" stroke-width="2.5" marker-end="url(#arr-navy)"/>
+
+              <!-- Gate 2 -->
+              <rect x="308" y="148" width="248" height="186" rx="12" fill="#FFFFFF" stroke="#0B1F3A" stroke-width="2"/>
+              <rect x="308" y="148" width="248" height="44" rx="10" fill="#132E52"/>
+              <text x="432" y="176" text-anchor="middle" fill="#FFFFFF" font-size="17" font-weight="700">關口二：友善 (P08–09)</text>
+              <text x="432" y="214" text-anchor="middle" fill="#C88A2E" font-size="14" font-weight="700">核心功能：降低防禦</text>
+              <text x="326" y="242" fill="#334155" font-size="13">• 互惠：安全感結餘＋先行施惠</text>
+              <text x="326" y="266" fill="#334155" font-size="13">• 覺知：被看重／有歸屬／能做主</text>
+              <text x="326" y="290" fill="#334155" font-size="13">• 召喚：用訊號喚醒對方好版本</text>
+              <text x="326" y="318" fill="#64748B" font-size="12" font-weight="700">檢核：對方感受到善意與尊重嗎？</text>
+
+              <line x1="556" y1="240" x2="588" y2="240" stroke="#0B1F3A" stroke-width="2.5" marker-end="url(#arr-navy)"/>
+
+              <!-- Gate 3 -->
+              <rect x="596" y="148" width="248" height="186" rx="12" fill="#FFFFFF" stroke="#0B1F3A" stroke-width="2"/>
+              <rect x="596" y="148" width="248" height="44" rx="10" fill="#1E4270"/>
+              <text x="720" y="176" text-anchor="middle" fill="#FFFFFF" font-size="17" font-weight="700">關口三：應變 (P10–11)</text>
+              <text x="720" y="214" text-anchor="middle" fill="#C88A2E" font-size="14" font-weight="700">核心功能：匹配情勢</text>
+              <text x="614" y="242" fill="#334155" font-size="13">• 以直報怨，拒絕盲目單一善良</text>
+              <text x="614" y="266" fill="#334155" font-size="13">• TKI 雙維度五策略靈活切換</text>
+              <text x="614" y="290" fill="#334155" font-size="13">• 感覺 → 驗證 → 選擇三步曲</text>
+              <text x="614" y="318" fill="#64748B" font-size="12" font-weight="700">檢核：此刻該推進、讓步或暫停？</text>
+
+              <line x1="844" y1="240" x2="876" y2="240" stroke="#C88A2E" stroke-width="2.5" stroke-dasharray="6,4" marker-end="url(#arr-gold)"/>
+
+              <!-- Gate 4 -->
+              <rect x="884" y="148" width="236" height="186" rx="12" fill="#FEF7E8" stroke="#C88A2E" stroke-width="2.5"/>
+              <rect x="884" y="148" width="236" height="44" rx="10" fill="#C88A2E"/>
+              <text x="1002" y="176" text-anchor="middle" fill="#FFFFFF" font-size="17" font-weight="700">關口四：重啟 (P12–13)</text>
+              <text x="1002" y="214" text-anchor="middle" fill="#0B1F3A" font-size="14" font-weight="700">核心功能：清理舊現場</text>
+              <text x="900" y="242" fill="#334155" font-size="13">• 情緒標記：抽離身份與情緒</text>
+              <text x="900" y="266" fill="#334155" font-size="13">• 時間鏡頭 ✕ 敘事鏡頭找分岔</text>
+              <text x="900" y="290" fill="#334155" font-size="13">• 四步修復公式（和解或離開）</text>
+              <text x="900" y="318" fill="#B4771E" font-size="12" font-weight="700">檢核：停止讓過去壟斷未來</text>
+
+              <!-- Feedback loop arrow from Gate 4 back to Gate 1-3 -->
+              <path d="M1002,334 L1002,392 L144,392 L144,342" fill="none" stroke="#C88A2E" stroke-width="2.5" marker-end="url(#arr-gold)"/>
+              <rect x="370" y="374" width="420" height="34" rx="17" fill="#0B1F3A"/>
+              <text x="580" y="396" text-anchor="middle" fill="#FDE6B8" font-size="13.5" font-weight="700">若仍出錯 → 以「重啟」清理現場 → 重新回到清晰、友善與應變閉環</text>
+            </svg>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">清晰減少誤解、友善降低防禦、應變匹配情勢；出問題則以重啟清理現場並重新循環。</span>
+          <span class="page-num">02 / 15</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 03 : 痛點與破題
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="02 · 前言與問題意識"
+        data-title="高壓即興現場大腦負荷極小，「話術中心」必然失靈，唯有極簡原則能即時調用"
+        data-note-conclusion="我們學過無數說話技巧卻總在關鍵時刻用不上，因為「話術中心」違背了人類高壓下的大腦負荷與生命經驗。"
+        data-note-evidence="書中開場專案會議案例：負責人說『盡快推進、部門協同、體現創新』，全員點頭卻四部門各走各路（產品做原型、市場定主題、法務做風控、財務等預算）。壓力下大腦忙於處理情緒已用盡全力，談判書教的假裝驚訝或故意沉默只會演戲露餡。"
+        data-note-transition="理解了為何需要極簡原則後，接下來兩頁我們先拆掉四個最容易讓溝通走偏的底層誤會。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">02 · PROBLEM STATEMENT · 為何話術總在關鍵時刻失靈</span>
+            <span class="slide-pacing">建議節奏 01:20–02:00</span>
+          </div>
+          <h2 class="action-title">高壓即興現場大腦負荷極小，<em>「話術中心」必然失靈</em>，唯有極簡原則能即時調用</h2>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2-wide">
+            <!-- Left: SVG Divergence of Project Meeting -->
+            <div class="svg-box" style="padding:14px;">
+              <svg viewBox="0 0 680 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+                <defs>
+                  <marker id="arr-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                    <path d="M0,1 L9,5 L0,9 z" fill="#B91C1C"/>
+                  </marker>
+                </defs>
+                <text x="16" y="26" fill="#0B1F3A" font-size="16" font-weight="700">經典失效現場：同一場專案會，全員點頭卻走向四個方向</text>
+                <!-- Speaker Box -->
+                <rect x="16" y="48" width="230" height="330" rx="12" fill="#0B1F3A"/>
+                <text x="131" y="84" text-anchor="middle" fill="#E0A84B" font-size="13" font-weight="700">專案負責人發話</text>
+                <text x="131" y="128" text-anchor="middle" fill="#FFFFFF" font-size="15.5" font-weight="700">「這個專案非常重要，</text>
+                <text x="131" y="156" text-anchor="middle" fill="#FDE6B8" font-size="16" font-weight="700">大家『盡快』推進，</text>
+                <text x="131" y="184" text-anchor="middle" fill="#FFFFFF" font-size="15.5" font-weight="700">注意『部門協同』，</text>
+                <text x="131" y="212" text-anchor="middle" fill="#FDE6B8" font-size="16" font-weight="700">方案要體現『創新』。」</text>
+                <rect x="38" y="250" width="186" height="44" rx="8" fill="rgba(255,255,255,0.1)"/>
+                <text x="131" y="277" text-anchor="middle" fill="#CBD5E1" font-size="13">現場結果：全員點頭、無人提問</text>
+                <text x="131" y="335" text-anchor="middle" fill="#E0A84B" font-size="12.5" font-weight="700">關於「創新」的各自解讀：</text>
+                <text x="131" y="357" text-anchor="middle" fill="#CBD5E1" font-size="12">新功能 vs 商業模式 vs 包裝新意</text>
+
+                <!-- Diverging Arrows -->
+                <path d="M246,120 C295,120 300,82 342,82" fill="none" stroke="#B91C1C" stroke-width="2.2" marker-end="url(#arr-red)"/>
+                <path d="M246,175 C295,175 300,168 342,168" fill="none" stroke="#B91C1C" stroke-width="2.2" marker-end="url(#arr-red)"/>
+                <path d="M246,230 C295,230 300,254 342,254" fill="none" stroke="#B91C1C" stroke-width="2.2" marker-end="url(#arr-red)"/>
+                <path d="M246,285 C295,285 300,340 342,340" fill="none" stroke="#B91C1C" stroke-width="2.2" marker-end="url(#arr-red)"/>
+
+                <!-- Four Departments -->
+                <rect x="352" y="48" width="312" height="68" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
+                <text x="370" y="75" fill="#B91C1C" font-size="14" font-weight="700">產品部門解讀的「盡快」</text>
+                <text x="370" y="99" fill="#334155" font-size="13.5">先快速做出一個可以演示的原型</text>
+
+                <rect x="352" y="134" width="312" height="68" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
+                <text x="370" y="161" fill="#B91C1C" font-size="14" font-weight="700">市場部門解讀的「盡快」</text>
+                <text x="370" y="185" fill="#334155" font-size="13.5">馬上拍板並確定對外傳播主題</text>
+
+                <rect x="352" y="220" width="312" height="68" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
+                <text x="370" y="247" fill="#B91C1C" font-size="14" font-weight="700">法務部門解讀的「盡快」</text>
+                <text x="370" y="271" fill="#334155" font-size="13.5">應當優先完成合規與風險審查</text>
+
+                <rect x="352" y="306" width="312" height="68" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
+                <text x="370" y="333" fill="#B91C1C" font-size="14" font-weight="700">財務部門解讀的「盡快」</text>
+                <text x="370" y="357" fill="#334155" font-size="13.5">停在原地等待一份明確的預算表</text>
+              </svg>
+            </div>
+
+            <!-- Right: Why Scripts Fail -->
+            <div style="display:flex;flex-direction:column;gap:14px;">
+              <div class="mc-card red-top">
+                <div class="card-label">DIAGNOSIS 01 · 認知瓶頸</div>
+                <h3 class="card-title">高壓即興時，大腦是個「笨蛋」</h3>
+                <ul class="mc-list">
+                  <li>臨時上台發言或衝突氣頭上，大腦光是<strong>處理情緒已耗盡負荷</strong>。</li>
+                  <li>大腦會自我辯護、避重就輕，根本沒有餘力去記憶倉庫翻找「遇到 A 類人用 X 話術」。</li>
+                </ul>
+              </div>
+
+              <div class="mc-card gold-top">
+                <div class="card-label">DIAGNOSIS 02 · 體驗斷裂</div>
+                <h3 class="card-title">脫離生命經驗的「演戲話術」一用就露餡</h3>
+                <ul class="mc-list">
+                  <li>部分談判書教人報價後「假裝驚訝」或「故意沉默施壓」。</li>
+                  <li>與平時為人相處方式背離，硬演只會讓自己<strong>感到別扭、迅速穿幫</strong>。</li>
+                </ul>
+              </div>
+
+              <div class="callout-navy">
+                <strong>為何從「衝突管理」提煉原則？</strong><br/>
+                衝突是溝通的極端壓力測試——在最難的現場依然管用的極簡四原則，放回日常工作與家庭場景，更不會出錯。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">每個人聽見同一句話卻走向不同方向；解決之道不是背更多話術，而是握緊四條極簡原則。</span>
+          <span class="page-num">03 / 15</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 04 : 破除四大誤會（上）
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="03 · 溝通的誤會（上）"
+        data-title="溝通不等於說話、話多不等於會溝通——驅動行為改變的底層引擎是「需求」"
+        data-note-conclusion="資訊發出不等於抵達，口若懸河也不等於改變行為；唯有對準對方內在「需求」，溝通才算真正發生。"
+        data-note-evidence="誤會一：給老師發『下週一中午12點直播一下』，缺背景、價值與配合內容；誤會二：作者打過上千場辯論賽，深知能說會道不等於會溝通。孩子沉迷遊戲在父母眼裡是淪陷，在孩子那裡是榮譽感、歸屬感與排遣孤獨——不滿足需求，再多道理都是薄薄一張紙。"
+        data-note-transition="拆完前兩個關於「怎麼說」的誤會，下一頁我們拆掉另外兩個關於「衝突」與「溝通邊界」的深層誤會。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">03 · DEBUNKING MYTHS (1/2) · 破除誤會一與誤會二</span>
+            <span class="slide-pacing">建議節奏 02:00–02:40</span>
+          </div>
+          <h2 class="action-title">溝通 ≠ 說話、話多 ≠ 會溝通——驅動行為改變的底層引擎永遠是<em>「需求」</em></h2>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2">
+            <!-- Myth 1 -->
+            <div class="mc-card navy-top" style="gap:14px;">
+              <div>
+                <div class="card-label">MYTH 01 · 資訊產生 ≠ 真正抵達</div>
+                <h3 class="card-title">誤會一：以為「把話說出去」就是溝通</h3>
+              </div>
+
+              <table class="mc-table">
+                <thead>
+                  <tr><th style="width:28%;">維度</th><th>只是「說話」（單向發送）</th><th>真正的「溝通」（雙向抵達）</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>來源案例</strong></td>
+                    <td>「老師好，下週一中午 12 點您有時間嗎？咱們直播一下。」</td>
+                    <td>說清：<strong>是什麼活動、為何適合你、你能得到什麼、需要你做什麼</strong>。</td>
+                  </tr>
+                  <tr>
+                    <td><strong>隱含心態</strong></td>
+                    <td>「你應該配合我出現」</td>
+                    <td>「為了共同目的，如何配合並為彼此創造價值」</td>
+                  </tr>
+                  <tr>
+                    <td><strong>溝通結果</strong></td>
+                    <td>資訊已發出，對方一頭霧水、推託不回</td>
+                    <td>大幅減少來回追問，直接促成共識與行動</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="callout-gold">
+                <strong>團隊落地檢核：</strong>發起會議或請求協作時，至少交代「目標、關聯性、對方價值、具體動作」四要素。
+              </div>
+            </div>
+
+            <!-- Myth 2 + Iceberg SVG -->
+            <div class="mc-card gold-top" style="gap:12px;">
+              <div>
+                <div class="card-label">MYTH 02 · 衝突解決學科核心概念</div>
+                <h3 class="card-title">誤會二：以為「口才好、話多」就會溝通</h3>
+              </div>
+
+              <div class="svg-box" style="flex:1;border:none;padding:4px;">
+                <svg viewBox="0 0 520 265" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+                  <!-- Waterline -->
+                  <rect x="10" y="10" width="500" height="84" rx="8" fill="#F8FAFC"/>
+                  <rect x="10" y="96" width="500" height="160" rx="8" fill="#0B1F3A"/>
+                  <line x1="10" y1="95" x2="510" y2="95" stroke="#C88A2E" stroke-width="2.5" stroke-dasharray="6,4"/>
+
+                  <!-- Iceberg Polygon -->
+                  <polygon points="260,22 205,94 315,94" fill="#CBD5E1" stroke="#0B1F3A" stroke-width="1.5"/>
+                  <polygon points="205,96 315,96 378,240 142,240" fill="#1E4270" stroke="#E0A84B" stroke-width="1.8"/>
+
+                  <!-- Above Water Text -->
+                  <text x="260" y="65" text-anchor="middle" fill="#0B1F3A" font-size="13.5" font-weight="700">表面行為與說教</text>
+                  <text x="26" y="42" fill="#475569" font-size="12.5" font-weight="700">辯論賽上千場觀察：</text>
+                  <text x="26" y="62" fill="#64748B" font-size="12">舌燦蓮花 ≠ 會溝通</text>
+                  <text x="342" y="42" fill="#B91C1C" font-size="12.5" font-weight="700">父母視角（表象）：</text>
+                  <text x="342" y="62" fill="#64748B" font-size="12">「孩子沉迷遊戲是淪陷」</text>
+
+                  <!-- Below Water Text -->
+                  <text x="260" y="132" text-anchor="middle" fill="#E0A84B" font-size="16" font-weight="700">核心驅動力：內在「需求」</text>
+                  <rect x="172" y="150" width="176" height="28" rx="6" fill="rgba(255,255,255,0.12)"/>
+                  <text x="260" y="169" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">榮譽感 · 歸屬感</text>
+                  <rect x="158" y="186" width="204" height="28" rx="6" fill="rgba(255,255,255,0.12)"/>
+                  <text x="260" y="205" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="600">真實世界孤獨的填充</text>
+                  <text x="260" y="232" text-anchor="middle" fill="#FDE6B8" font-size="12">不滿足這個需求，再多道理都是薄薄一張紙</text>
+                </svg>
+              </div>
+
+              <div class="callout-navy">
+                <strong>底層規律：</strong>人永遠是因為「需求獲得滿足」而改變行為，不是因為你講贏了道理。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">溝通不是單向輸出資訊或辯論勝出，而是讓對方看見價值、觸及真實需求。</span>
+          <span class="page-num">04 / 15</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 05 : 破除四大誤會（下）與交易成本本質
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="04 · 溝通的誤會（下）與本質定位"
+        data-title="衝突比敷衍更真實；溝通核心價值在降低「交易成本」並奉行「大事不多」"
+        data-note-conclusion="溝通不是無所不能的「溝通神學」，它在經濟學上解決的是「交易成本」，在生活中要懂得「大事不多」。"
+        data-note-evidence="誤會三：『來都來了、都不容易』是偽共識，衝突才暴露真實與邊界。誤會四：同事裝修敲牆溝通極佳，鄰居仍因賣房變卦；老師名言『相信所有衝突都能解決，但不一定是被你解決的』。經濟學家科斯用二手車說明搜尋、談判、信任、鑑定四大交易成本。注意力如肌肉，小事（冷場、群發錯訊撤不回）忘掉就好。"
+        data-note-transition="地基校準完成！接下來正式進入全書四條原則的第一道關口——「清晰」。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">04 · DEBUNKING MYTHS (2/2) &amp; ESSENCE · 衝突、交易成本與邊界</span>
+            <span class="slide-pacing">建議節奏 02:40–03:20</span>
+          </div>
+          <h2 class="action-title">衝突比敷衍更真實；溝通的核心價值在降低<em>「交易成本」</em>並奉行<em>「大事不多」</em></h2>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-3">
+            <!-- Col 1: Myth 3 & 4 -->
+            <div class="mc-card navy-top" style="gap:10px;">
+              <div class="card-label">MYTH 03 &amp; 04 · 真實與謙卑</div>
+              <h3 class="card-title">不畏衝突，也不迷信「溝通萬能」</h3>
+              <ul class="mc-list">
+                <li><strong>衝突比偽共識真實：</strong>「來都來了」「都不容易」只是敷衍；衝突幫我們釐清邊界、孕育改變。</li>
+                <li><strong>裝修敲牆案例：</strong>同事拍照解釋到位，鄰居隔天仍反悔（因要賣房）——對方有更重要需求時，溝通非唯一變量。</li>
+                <li><strong>推牆比喻：</strong>每天推牆，牆不會倒，但你的手臂會變強。</li>
+              </ul>
+              <div class="callout-gold" style="font-size:12.5px;">
+                <strong>老師兩句話：</strong>① 相信世界所有衝突都能解決（<strong>給人力量</strong>）；② 不一定是被你解決的（<strong>教人謙卑</strong>）。
+              </div>
+            </div>
+
+            <!-- Col 2: Coase Transaction Cost SVG -->
+            <div class="mc-card gold-top" style="gap:8px;">
+              <div class="card-label">ECONOMIC ESSENCE · 科斯理論</div>
+              <h3 class="card-title">溝通真正解決的是「交易成本」</h3>
+              <div class="svg-box" style="flex:1;border:none;padding:2px;">
+                <svg viewBox="0 0 340 270" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+                  <!-- Top value creation -->
+                  <rect x="10" y="6" width="320" height="44" rx="8" fill="#0B1F3A"/>
+                  <text x="170" y="24" text-anchor="middle" fill="#E0A84B" font-size="11.5" font-weight="700">價值創造第三條路（規模效應＋創新之外）</text>
+                  <text x="170" y="42" text-anchor="middle" fill="#FFFFFF" font-size="13.5" font-weight="700">以高質量溝通 降低交互交易成本</text>
+
+                  <!-- 4 Cost Blocks (Used Car Example) -->
+                  <rect x="10" y="66" width="154" height="72" rx="8" fill="#F8FAFC" stroke="#CBD5E1"/>
+                  <text x="87" y="92" text-anchor="middle" fill="#0B1F3A" font-size="14" font-weight="700">1. 搜尋成本</text>
+                  <text x="87" y="114" text-anchor="middle" fill="#475569" font-size="12">花時間找資訊／找對象</text>
+
+                  <rect x="176" y="66" width="154" height="72" rx="8" fill="#F8FAFC" stroke="#CBD5E1"/>
+                  <text x="253" y="92" text-anchor="middle" fill="#0B1F3A" font-size="14" font-weight="700">2. 談判成本</text>
+                  <text x="253" y="114" text-anchor="middle" fill="#475569" font-size="12">反覆拉鋸、議價對齊</text>
+
+                  <rect x="10" y="148" width="154" height="72" rx="8" fill="#FEF7E8" stroke="#E0A84B"/>
+                  <text x="87" y="174" text-anchor="middle" fill="#B4771E" font-size="14" font-weight="700">3. 信任成本</text>
+                  <text x="87" y="196" text-anchor="middle" fill="#475569" font-size="12">判斷對方是否欺騙你</text>
+
+                  <rect x="176" y="148" width="154" height="72" rx="8" fill="#FEF7E8" stroke="#E0A84B"/>
+                  <text x="253" y="174" text-anchor="middle" fill="#B4771E" font-size="14" font-weight="700">4. 鑑定成本</text>
+                  <text x="253" y="196" text-anchor="middle" fill="#475569" font-size="12">請第三方檢驗與背書</text>
+
+                  <text x="170" y="248" text-anchor="middle" fill="#64748B" font-size="12">買二手車範例：商品價格之外的所有交互損耗</text>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Col 3: Energy Boundary -->
+            <div class="mc-card dark" style="gap:12px;">
+              <div class="card-label">ENERGY PRINCIPLE · 注意力管理</div>
+              <h3 class="card-title">口號：「大事不多」——並非所有事都值得好好溝通</h3>
+              <ul class="mc-list">
+                <li><strong>意志力像肌肉：</strong>用多了會疲乏；在小事上焦灼內耗，遇到真大事就無力炯炯有神。</li>
+                <li><strong>小事快速止血：</strong>發錯消息 → 真誠道歉澄清 → <strong>此事終了</strong>。</li>
+                <li><strong>果斷放下的雜訊：</strong>別人說壞話、微信群發錯撤不回、說完話突然冷場——<strong>忘掉就好</strong>。</li>
+              </ul>
+              <div style="margin-top:auto;padding:12px;border-radius:8px;background:rgba(200,138,46,0.18);border:1px solid rgba(224,168,75,0.45);font-size:13px;color:#FDE6B8;">
+                不是所有的關係都值得百般珍惜，你也不需要讓所有人都滿意。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">拒絕溝通神學：承認衝突真實性、用溝通降交易成本，把寶貴心力留給真正的大事。</span>
+          <span class="page-num">05 / 15</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 06 : 原則一「清晰」技巧與人性雙束縛
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="05 · 原則一：清晰（障礙剖析）"
+        data-title="最危險的話是「我已經說得很清楚了」——模糊根源在知識詛咒與心理防禦"
+        data-note-conclusion="清晰難的從來不是怎麼說，而是為什麼不敢說；第一層障礙在技巧，第二層更深的障礙在人性。"
+        data-note-evidence="技巧含資訊釐清、語境適應、自我袒露。但人有兩大束縛：① 認知「知識詛咒／所知障」（領導說『按上次標準』）加上人類面對空缺會如『過度警覺的守夜人』自動往消極面填補；② 心理防禦把脆弱變形成指責、拖延、冷淡、憤怒。清晰不全是技術問題，更是勇氣問題。"
+        data-note-transition="除了無意識的盲點與不敢說，職場還存在「故意不說清楚」的策略性模糊，我們在下一頁算清這筆帳。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">05 · PRINCIPLE 1: CLARITY · 清晰的技巧層與人性雙重束縛</span>
+            <span class="slide-pacing">建議節奏 03:20–04:00</span>
+          </div>
+          <h2 class="action-title">最危險的話是「我已經說得很清楚了」——模糊根源在<em>知識詛咒</em>與<em>心理防禦</em></h2>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2-left">
+            <!-- Left: SVG Iceberg of Clarity Barriers -->
+            <div class="svg-box" style="padding:12px;">
+              <svg viewBox="0 0 440 430" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+                <text x="220" y="24" text-anchor="middle" fill="#0B1F3A" font-size="15" font-weight="700">清晰雙層障礙模型：技巧 vs 人性</text>
+
+                <!-- Layer 1: Skills -->
+                <rect x="20" y="42" width="400" height="104" rx="10" fill="#F1F5F9" stroke="#94A3B8" stroke-width="1.5"/>
+                <text x="38" y="68" fill="#0B1F3A" font-size="13.5" font-weight="700">表層障礙：表達技巧（書中三層面）</text>
+                <rect x="36" y="82" width="114" height="48" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+                <text x="93" y="103" text-anchor="middle" fill="#0B1F3A" font-size="12.5" font-weight="700">資訊釐清</text>
+                <text x="93" y="121" text-anchor="middle" fill="#64748B" font-size="11">結構化、具體化</text>
+
+                <rect x="163" y="82" width="114" height="48" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+                <text x="220" y="103" text-anchor="middle" fill="#0B1F3A" font-size="12.5" font-weight="700">語境適應</text>
+                <text x="220" y="121" text-anchor="middle" fill="#64748B" font-size="11">按對方語言講</text>
+
+                <rect x="290" y="82" width="114" height="48" rx="6" fill="#FFFFFF" stroke="#CBD5E1"/>
+                <text x="347" y="103" text-anchor="middle" fill="#0B1F3A" font-size="12.5" font-weight="700">自我袒露</text>
+                <text x="347" y="121" text-anchor="middle" fill="#64748B" font-size="11">說出真實感受</text>
+
+                <!-- Divider -->
+                <line x1="20" y1="164" x2="420" y2="164" stroke="#C88A2E" stroke-width="2" stroke-dasharray="6,4"/>
+                <rect x="128" y="152" width="184" height="24" rx="12" fill="#C88A2E"/>
+                <text x="220" y="168" text-anchor="middle" fill="#FFFFFF" font-size="11.5" font-weight="700">更深層的阻力來自「人性」</text>
+
+                <!-- Layer 2A: Cognitive -->
+                <rect x="20" y="188" width="400" height="110" rx="10" fill="#0B1F3A"/>
+                <text x="38" y="214" fill="#E0A84B" font-size="13.5" font-weight="700">束縛一：認知盲區（知識詛咒 / 佛學「所知障」）</text>
+                <text x="38" y="238" fill="#FFFFFF" font-size="12.5">• 知道一件事後，難以想像不知者的茫然（如「按上次標準」）。</text>
+                <text x="38" y="260" fill="#FFFFFF" font-size="12.5">• 人類面對空缺從不留白，而是自動往消極面填補：</text>
+                <text x="38" y="282" fill="#FDE6B8" font-size="12.5" font-weight="700">  大腦不是冷靜法官，而是「過度警覺的守夜人」（風險敏感演化）。</text>
+
+                <!-- Layer 2B: Defense -->
+                <rect x="20" y="310" width="400" height="106" rx="10" fill="#FEF7E8" stroke="#C88A2E" stroke-width="1.8"/>
+                <text x="38" y="336" fill="#B4771E" font-size="13.5" font-weight="700">束縛二：心理防禦（不是詞不達意，而是不敢達意）</text>
+                <text x="38" y="360" fill="#334155" font-size="12.5">• 把話說清楚 ＝ 把自己攤開（怕顯卑微、羸弱、無能、點燃衝突）。</text>
+                <text x="38" y="382" fill="#334155" font-size="12.5">• 自我保護本能迫使真實訴求偽裝變形。</text>
+                <text x="38" y="404" fill="#0B1F3A" font-size="13" font-weight="700">結論：清晰不只是表達技術，更是直面脆弱的勇氣問題。</text>
+              </svg>
+            </div>
+
+            <!-- Right: Deformation Translation Table -->
+            <div class="mc-card navy-top" style="gap:14px;">
+              <div>
+                <div class="card-label">PSYCHOLOGICAL TRANSLATION · 心理防禦的「話語變形」對照</div>
+                <h3 class="card-title">看穿四種常見偽裝，練習把真實訴求直接說出口</h3>
+              </div>
+
+              <table class="mc-table">
+                <thead>
+                  <tr>
+                    <th style="width:20%;">防禦偽裝</th>
+                    <th style="width:39%;">口頭上的變形話語（模糊傷人）</th>
+                    <th style="width:41%;">背後不敢說的清晰真話</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>把請求藏在指責裡</strong></td>
+                    <td>「你怎麼總是這麼自私？」</td>
+                    <td>「你的決定讓我覺得<strong>自己不重要</strong>，我希望你重視我的意見。」</td>
+                  </tr>
+                  <tr>
+                    <td><strong>把拒絕藏在拖延裡</strong></td>
+                    <td>「這個方案我們再研究研究…」</td>
+                    <td>「這個目標在現有條件下<strong>我擔心完不成</strong>，需要調整資源或時程。」</td>
+                  </tr>
+                  <tr>
+                    <td><strong>把在意藏在冷淡裡</strong></td>
+                    <td>「隨便，你走吧。」</td>
+                    <td>「我其實很在意你，<strong>我希望你留下</strong>。」</td>
+                  </tr>
+                  <tr>
+                    <td><strong>把脆弱藏在憤怒裡</strong></td>
+                    <td>暴怒反擊、指責對方失職</td>
+                    <td>「我現在非常焦慮／害怕失控，<strong>我需要你的幫助</strong>。」</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="callout-gold">
+                <strong>演化警示：</strong>當你遲遲未回消息，對方很少先想「他可能在開會」，更容易腦補「他是不是不重視我」。資訊越留白，對方防禦越升級。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">誤解最常發生在所有人都以為自己聽懂了的時候；清晰既要克服知識詛咒，更要拿出袒露的勇氣。</span>
+          <span class="page-num">06 / 15</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 07 : 原則一「清晰」進階：策略性模糊與解碼成本
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="06 · 原則一：清晰（策略與成本）"
+        data-title="分清「不敢說」與「策略性模糊」：不必拋棄含蓄，但須算清解碼成本由誰買單"
+        data-note-conclusion="模糊並非永遠錯誤，關鍵在分清「不敢說」與「選擇不說」，並且清楚每分模糊都會轉嫁為對方的解碼成本。"
+        data-note-evidence="傳播學者埃里克·艾森伯格提出『策略性模糊』：下屬說『繼續努力爭取』、組織高喊『持續提升、協同賦能、打造生態』，是為保護面子、保留退路、暫時團結不同利益者。中國文化亦珍視含蓄與留白。但拒絕說清楚只會把風險轉成對方猜測成本，最終以誤解反噬關係。"
+        data-note-transition="把話說清楚只是第一關；如果只有清晰而沒有溫度，尖銳的真話反而會觸發防禦。我們進入第二原則——「友善」。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">06 · STRATEGIC AMBIGUITY &amp; DECODING COST · 策略性模糊與解碼成本</span>
+            <span class="slide-pacing">建議節奏 04:00–04:40</span>
+          </div>
+          <h2 class="action-title">分清「不敢說」與<em>「策略性模糊」</em>：不必拋棄含蓄，但須算清<em>解碼成本</em>由誰買單</h2>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2">
+            <!-- Left: Two Types of Ambiguity -->
+            <div style="display:flex;flex-direction:column;gap:14px;">
+              <div class="mc-card navy-top">
+                <div class="card-label">ERIC EISENBERG · 功能性策略</div>
+                <h3 class="card-title">為什麼組織與文化常理性選擇「策略性模糊」？</h3>
+                <ul class="mc-list">
+                  <li><strong>保護面子與權力緩衝：</strong>下屬不說「目標無法完成」，改說「繼續努力爭取」。</li>
+                  <li><strong>暫時凝聚不同利益者：</strong>組織反覆講「持續提升、協同賦能、打造生態」，避免過早暴露資源分配與分歧。</li>
+                  <li><strong>東方含蓄美學：</strong>「言有盡而意無窮」「話不能說滿」「不言而喻的默契」，為關係保留彈性。</li>
+                </ul>
+              </div>
+
+              <div class="mc-card gold-top" style="flex:1;">
+                <div class="card-label">DECISION LENS · 兩類模糊辨析</div>
+                <table class="mc-table">
+                  <thead><tr><th>類型</th><th>本質</th><th>正確對策</th></tr></thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>1. 不敢說</strong></td>
+                      <td>恐懼拒絕、衝突或暴露無能</td>
+                      <td>覺察心理防禦，主動承擔清晰代價</td>
+                    </tr>
+                    <tr>
+                      <td><strong>2. 選擇不說</strong></td>
+                      <td>保護面子、留退路或文化含蓄</td>
+                      <td>清醒計算「解碼成本」是否超出關係承受力</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Right: SVG Decoding Cost Balance -->
+            <div class="svg-box" style="padding:16px;">
+              <svg viewBox="0 0 540 420" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+                <defs>
+                  <marker id="arr-dark" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0,1 L9,5 L0,9 z" fill="#0B1F3A"/>
+                  </marker>
+                </defs>
+                <text x="270" y="26" text-anchor="middle" fill="#0B1F3A" font-size="16" font-weight="700">清晰代價 vs 解碼成本：心裡一定要有一本帳</text>
+
+                <!-- Left Path: Clear -->
+                <rect x="18" y="54" width="234" height="196" rx="12" fill="#F0FDFA" stroke="#0F766E" stroke-width="2"/>
+                <rect x="18" y="54" width="234" height="38" rx="10" fill="#0F766E"/>
+                <text x="135" y="79" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="700">選擇把話說清楚（前置成本）</text>
+                <text x="36" y="118" fill="#0F172A" font-size="13" font-weight="700">表達者當下承擔：</text>
+                <text x="36" y="142" fill="#334155" font-size="12.5">• 直接面對拒絕、分歧或短暫不快</text>
+                <text x="36" y="166" fill="#334155" font-size="12.5">• 承擔責任歸屬與明確標準</text>
+                <rect x="34" y="186" width="202" height="46" rx="8" fill="#FFFFFF" stroke="#99F6E4"/>
+                <text x="135" y="206" text-anchor="middle" fill="#0F766E" font-size="12.5" font-weight="700">長期回報：有效溝通真正開始</text>
+                <text x="135" y="224" text-anchor="middle" fill="#475569" font-size="11.5">團隊對齊快、後續返工極低</text>
+
+                <!-- Right Path: Ambiguous -->
+                <rect x="288" y="54" width="234" height="196" rx="12" fill="#FEF2F2" stroke="#B91C1C" stroke-width="2"/>
+                <rect x="288" y="54" width="234" height="38" rx="10" fill="#B91C1C"/>
+                <text x="405" y="79" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="700">拒絕說清楚（轉嫁解碼成本）</text>
+                <text x="306" y="118" fill="#0F172A" font-size="13" font-weight="700">風險被轉嫁給對方：</text>
+                <text x="306" y="142" fill="#334155" font-size="12.5">• 對方耗費心力猜測真實意圖</text>
+                <text x="306" y="166" fill="#334155" font-size="12.5">• 守夜人大腦自動往壞處解讀</text>
+                <rect x="304" y="186" width="202" height="46" rx="8" fill="#FFFFFF" stroke="#FECACA"/>
+                <text x="405" y="206" text-anchor="middle" fill="#B91C1C" font-size="12.5" font-weight="700">長期代價：以誤解反噬關係</text>
+                <text x="405" y="224" text-anchor="middle" fill="#475569" font-size="11.5">表面和氣、實則埋下更大衝突</text>
+
+                <!-- Bottom Summary Principle -->
+                <path d="M135,250 L135,286 L230,286" fill="none" stroke="#0B1F3A" stroke-width="2"/>
+                <path d="M405,250 L405,286 L310,286" fill="none" stroke="#0B1F3A" stroke-width="2"/>
+                <rect x="32" y="294" width="476" height="104" rx="12" fill="#0B1F3A"/>
+                <text x="270" y="324" text-anchor="middle" fill="#E0A84B" font-size="14" font-weight="700">成熟溝通者的「成本帳本」</text>
+                <text x="270" y="352" text-anchor="middle" fill="#FFFFFF" font-size="13.5">含蓄是文化長出來的東西，不必也不該拋棄；</text>
+                <text x="270" y="378" text-anchor="middle" fill="#FDE6B8" font-size="14" font-weight="700">但必須看清：這份模糊的解碼成本，最終由誰來付？</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">當一個人願意主動承擔清晰的代價、不再把猜測轉嫁給對方，有效的溝通才真正開始。</span>
+          <span class="page-num">07 / 15</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 08 : 原則二「友善」第一層（互惠）與安全感結餘
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="07 · 原則二：友善（第一層：互惠）"
+        data-title="互惠不會自動發動，必須由內心握有「安全感結餘」的一方率先伸手釋放善意"
+        data-note-conclusion="知道友善重要與擁有友善能力是兩回事；互惠的啟動按鈕在那個「先」字，而先伸手的前提是內心有結餘。"
+        data-note-evidence="四大來源佐證：① 西奧迪尼《影響力》隨機寄聖誕賀卡引發大量陌生人回寄；② 英國籌款先送一小包糖果成功率提高一倍以上；③ 西南邊疆調解員『一杯茶、一支菸』先釋善意；④ 全國模範法官陳燕萍兩次微笑倒水被打翻後默默拖地，讓堂兄弟慚愧息爭。反觀安全感不足者，越怕失控越支配、越怕輕視越急著證明。"
+        data-note-transition="先伸手啟動互惠之後，如何精準安撫對方的壞情緒並喚醒對方最好的一面？請看友善的第二、三層——覺知與召喚。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">07 · PRINCIPLE 2: KINDNESS (RECIPROCITY) · 互惠先行與安全感結餘</span>
+            <span class="slide-pacing">建議節奏 04:40–05:20</span>
+          </div>
+          <h2 class="action-title">互惠不會自動發動，必須由內心握有<em>「安全感結餘」</em>的一方<em>率先伸手</em>釋放善意</h2>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2-left">
+            <!-- Left: SVG Reciprocity Flywheel -->
+            <div class="svg-box" style="padding:12px;">
+              <svg viewBox="0 0 430 430" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+                <defs>
+                  <marker id="arr-g2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0,1 L9,5 L0,9 z" fill="#C88A2E"/>
+                  </marker>
+                </defs>
+                <text x="215" y="24" text-anchor="middle" fill="#0B1F3A" font-size="15.5" font-weight="700">友善第一層「互惠」啟動機制</text>
+
+                <!-- Step 1: Inner Surplus -->
+                <rect x="45" y="46" width="340" height="82" rx="12" fill="#0B1F3A"/>
+                <text x="215" y="75" text-anchor="middle" fill="#E0A84B" font-size="14" font-weight="700">底層前提：內心擁有「豐沛結餘」</text>
+                <text x="215" y="100" text-anchor="middle" fill="#FFFFFF" font-size="12.5">足夠的安全感，才能把注意力騰出來理解他人</text>
+
+                <line x1="215" y1="128" x2="215" y2="156" stroke="#C88A2E" stroke-width="2.5" marker-end="url(#arr-g2)"/>
+
+                <!-- Step 2: Proactive First Move -->
+                <rect x="45" y="164" width="340" height="82" rx="12" fill="#FEF7E8" stroke="#C88A2E" stroke-width="2"/>
+                <text x="215" y="193" text-anchor="middle" fill="#B4771E" font-size="15" font-weight="700">關鍵動作：「先」對對方好（先行勇氣）</text>
+                <text x="215" y="219" text-anchor="middle" fill="#334155" font-size="12.5">若雙方都在等對方先施惠，互惠永遠不會發動</text>
+
+                <line x1="215" y1="246" x2="215" y2="274" stroke="#C88A2E" stroke-width="2.5" marker-end="url(#arr-g2)"/>
+
+                <!-- Step 3: Counter-party Defense Drops -->
+                <rect x="45" y="282" width="340" height="62" rx="12" fill="#F0FDFA" stroke="#0F766E" stroke-width="2"/>
+                <text x="215" y="309" text-anchor="middle" fill="#0F766E" font-size="14" font-weight="700">正向回饋：對立瓦解、自動回報善意</text>
+                <text x="215" y="331" text-anchor="middle" fill="#475569" font-size="12">對方心理防禦解除，願意開啟合作對話</text>
+
+                <!-- Warning Footer -->
+                <rect x="20" y="362" width="390" height="58" rx="8" fill="#FEF2F2" stroke="#FCA5A5"/>
+                <text x="215" y="384" text-anchor="middle" fill="#B91C1C" font-size="12" font-weight="700">為何道理都懂卻做不到？＝ 安全感匱乏反應</text>
+                <text x="215" y="405" text-anchor="middle" fill="#475569" font-size="11.5">越怕失控→越支配 ｜ 越怕輕視→越證明 ｜ 越怕不被愛→越傷人</text>
+              </svg>
+            </div>
+
+            <!-- Right: 4 Evidence Cases -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+              <div class="mc-card navy-top">
+                <div class="card-label">CASE 01 · 社會心理學實驗</div>
+                <h3 class="card-title">西奧迪尼《影響力》聖誕賀卡</h3>
+                <p style="margin:0;font-size:13.5px;color:#334155;line-height:1.6;">
+                  教授隨機寄聖誕賀卡給素昧平生的陌生人，結果<strong>回寄賀卡從四面八方湧來</strong>——收到善意的人會本能回報。
+                </p>
+              </div>
+
+              <div class="mc-card gold-top">
+                <div class="card-label">CASE 02 · 英國慈善籌款研究</div>
+                <h3 class="card-title">先送一小包糖果，募款率翻倍</h3>
+                <p style="margin:0;font-size:13.5px;color:#334155;line-height:1.6;">
+                  籌款員在開口提出捐款請求前，先贈送一小包糖果，結果募捐成功率<strong>提高一倍以上</strong>。
+                </p>
+              </div>
+
+              <div class="mc-card navy-top">
+                <div class="card-label">CASE 03 · 田野調查觀察</div>
+                <h3 class="card-title">西南邊疆調解員「一杯茶，一支菸」</h3>
+                <p style="margin:0;font-size:13.5px;color:#334155;line-height:1.6;">
+                  平時很有原則不抽菸的調解員，調解起手式總是先倒茶、請抽菸。具體做什麼次要，關鍵在那個<strong>「先」字</strong>。
+                </p>
+              </div>
+
+              <div class="mc-card teal-top">
+                <div class="card-label">CASE 04 · 模範法官實戰</div>
+                <h3 class="card-title">陳燕萍法官微笑倒水與默默拖地</h3>
+                <p style="margin:0;font-size:13.5px;color:#334155;line-height:1.6;">
+                  堂兄弟爭宅基地大打出手，她給雙方倒水兩度被打翻，默默拿拖把拖淨。當事人息怒：「<strong>再吵就對不起她了</strong>。」
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">友善不是道德說教，而是先蓄足內在安全感結餘，勇敢做第一個遞出善意的人。</span>
+          <span class="page-num">08 / 15</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 09 : 原則二「友善」第二、三層（覺知與召喚）
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="08 · 原則二：友善（覺知與召喚）"
+        data-title="壞情緒源於三大核心需求未被滿足；你的訊號決定你「召喚」出對方的哪個人格版本"
+        data-note-conclusion="高階友善包含兩大能力：看見敵意背後的三大情緒需求（覺知），以及用正向訊號喚醒對方更包容的版本（召喚）。"
+        data-note-evidence="《高情商談判》指出糟糕情緒背後是『被看重、有歸屬、能做主』未滿足（例：先肯定成本意識再優化市場；考差說『一起看卡在哪』；讓業務自選新系統上線節奏）。召喚對比：費翔《封神》路演溫柔一句『那你可以原諒我嗎』激活包容；直播主播質問『找找自己原因』激化對立。"
+        data-note-transition="清晰與友善已經很強大，但對反覆侵犯邊界的人持續善意反而危險。下一頁我們進入第三原則——「應變」。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">08 · AWARENESS &amp; SUMMONING · 覺知三大需求 ✕ 召喚人格版本</span>
+            <span class="slide-pacing">建議節奏 05:20–06:00</span>
+          </div>
+          <h2 class="action-title">壞情緒源於<em>三大核心需求</em>未被滿足；你的訊號決定你<em>「召喚」</em>出對方的哪個版本</h2>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2">
+            <!-- Left: Layer 2 Awareness + SVG -->
+            <div class="mc-card navy-top" style="gap:10px;">
+              <div>
+                <div class="card-label">LAYER 02 · 覺知（《高情商談判》核心）</div>
+                <h3 class="card-title">看見敵意背後的三大核心情緒需求</h3>
+              </div>
+
+              <div class="svg-box" style="flex:1;border:none;padding:2px;">
+                <svg viewBox="0 0 530 305" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+                  <!-- Need 1 -->
+                  <rect x="8" y="8" width="514" height="88" rx="10" fill="#F8FAFC" stroke="#0B1F3A" stroke-width="1.6"/>
+                  <rect x="8" y="8" width="108" height="88" rx="10" fill="#0B1F3A"/>
+                  <text x="62" y="48" text-anchor="middle" fill="#E0A84B" font-size="13" font-weight="700">需求 01</text>
+                  <text x="62" y="72" text-anchor="middle" fill="#FFFFFF" font-size="17" font-weight="700">被看重</text>
+                  <text x="132" y="34" fill="#0B1F3A" font-size="13.5" font-weight="700">爭論常不是爭事實，而是追問「你有把我當回事嗎？」</text>
+                  <text x="132" y="58" fill="#334155" font-size="12.5">✗ 「你這方案不行」</text>
+                  <text x="132" y="79" fill="#0F766E" font-size="12.5" font-weight="700">✓ 「你考慮到成本控制很好，我們一起看市場怎麼優化」</text>
+
+                  <!-- Need 2 -->
+                  <rect x="8" y="108" width="514" height="88" rx="10" fill="#F8FAFC" stroke="#132E52" stroke-width="1.6"/>
+                  <rect x="8" y="108" width="108" height="88" rx="10" fill="#132E52"/>
+                  <text x="62" y="148" text-anchor="middle" fill="#E0A84B" font-size="13" font-weight="700">需求 02</text>
+                  <text x="62" y="172" text-anchor="middle" fill="#FFFFFF" font-size="17" font-weight="700">有歸屬</text>
+                  <text x="132" y="134" fill="#0B1F3A" font-size="13.5" font-weight="700">不再需要為自我價值辯護，才有能力處理事情</text>
+                  <text x="132" y="158" fill="#334155" font-size="12.5">✗ 「你怎麼又沒考好？」（審判感）</text>
+                  <text x="132" y="179" fill="#0F766E" font-size="12.5" font-weight="700">✓ 「結果讓我們都很著急，我們一起看看卡在哪裡」</text>
+
+                  <!-- Need 3 -->
+                  <rect x="8" y="208" width="514" height="88" rx="10" fill="#FEF7E8" stroke="#C88A2E" stroke-width="1.6"/>
+                  <rect x="8" y="208" width="108" height="88" rx="10" fill="#C88A2E"/>
+                  <text x="62" y="248" text-anchor="middle" fill="#0B1F3A" font-size="13" font-weight="700">需求 03</text>
+                  <text x="62" y="272" text-anchor="middle" fill="#FFFFFF" font-size="17" font-weight="700">能做主</text>
+                  <text x="132" y="234" fill="#0B1F3A" font-size="13.5" font-weight="700">真正的友善不是「接管」，而是讓對方按自己節奏接近</text>
+                  <text x="132" y="258" fill="#334155" font-size="12.5">✗ IT 強硬配好新系統流程 → 業務部門強烈抵觸</text>
+                  <text x="132" y="279" fill="#0F766E" font-size="12.5" font-weight="700">✓ 讓業務部門自選上線節奏與順序 → 抵觸大幅降低</text>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Right: Layer 3 Summoning Dual Path SVG -->
+            <div class="mc-card gold-top" style="gap:10px;">
+              <div>
+                <div class="card-label">LAYER 03 · 召喚（最深一層友善）</div>
+                <h3 class="card-title">人非固定人格：同一場「被質疑」，兩種回應召喚不同臉孔</h3>
+              </div>
+
+              <div class="svg-box" style="flex:1;border:none;padding:2px;">
+                <svg viewBox="0 0 530 270" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+                  <defs>
+                    <marker id="arr-t" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#0F766E"/></marker>
+                    <marker id="arr-r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#B91C1C"/></marker>
+                  </defs>
+                  <!-- Trigger Node -->
+                  <rect x="10" y="96" width="112" height="76" rx="10" fill="#0B1F3A"/>
+                  <text x="66" y="128" text-anchor="middle" fill="#E0A84B" font-size="12" font-weight="700">相同壓力情境</text>
+                  <text x="66" y="151" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="700">當眾被質疑</text>
+
+                  <!-- Top Positive Path -->
+                  <path d="M122,118 C150,118 150,62 178,62" fill="none" stroke="#0F766E" stroke-width="2.4" marker-end="url(#arr-t)"/>
+                  <rect x="186" y="12" width="334" height="106" rx="10" fill="#F0FDFA" stroke="#0F766E" stroke-width="1.8"/>
+                  <text x="202" y="36" fill="#0F766E" font-size="13.5" font-weight="700">✓ 正向召喚：費翔《封神》路演</text>
+                  <text x="202" y="58" fill="#334155" font-size="12">影迷阿姨質問：「怎麼演紂王這麼壞的角色？」</text>
+                  <text x="202" y="79" fill="#0B1F3A" font-size="13" font-weight="700">溫柔回應：「那你可以原諒我嗎？」</text>
+                  <text x="202" y="102" fill="#0F766E" font-size="12">→ 瞬間激活對方的同情、在意、欣賞與包容</text>
+
+                  <!-- Bottom Negative Path -->
+                  <path d="M122,150 C150,150 150,204 178,204" fill="none" stroke="#B91C1C" stroke-width="2.4" marker-end="url(#arr-r)"/>
+                  <rect x="186" y="148" width="334" height="110" rx="10" fill="#FEF2F2" stroke="#B91C1C" stroke-width="1.8"/>
+                  <text x="202" y="172" fill="#B91C1C" font-size="13.5" font-weight="700">✗ 負向召喚：直播帶貨主播反擊</text>
+                  <text x="202" y="194" fill="#334155" font-size="12">觀眾質疑：「產品越來越貴」</text>
+                  <text x="202" y="215" fill="#0B1F3A" font-size="12.5" font-weight="700">指責回應：「找找自己的原因，工資漲沒漲？」</text>
+                  <text x="202" y="238" fill="#B91C1C" font-size="12">→ 喚醒居高臨下蔑視感，徹底引爆公關敵意</text>
+                </svg>
+              </div>
+
+              <div class="callout-navy">
+                <strong>友善的真諦：</strong>不是討好、不是軟弱，而是有能力先釋善意、看見需求、喚醒對方更好的版本。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">滿足「被看重、有歸屬、能做主」能瞬間降溫敵意；你發出的訊號決定你面對誰。</span>
+          <span class="page-num">09 / 15</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 10 : 原則三「應變」底層哲學與 TKI 五維模型
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="09 · 原則三：應變（TKI 衝突模型）"
+        data-title="善良不是永遠同一種表情——以「以直報怨」為骨，依 TKI 雙維度切換五策略"
+        data-note-conclusion="清晰與友善若變成無差別教條就會出問題；應變要求我們以孔子「以直報怨」為準則，靈活切換 TKI 五種策略。"
+        data-note-evidence="對反覆欺騙與侵犯邊界者持續善意不是高尚，而是識別系統無能。孔子言『以直報怨，以德報德』（直＝正直、應當）。TKI 模型按『堅持性✕合作性』切出競爭、合作、妥協、迴避、退讓五象限。作者實測 37,000+ 中國城市中產顯示近七成屬下半區，大概率不與人為難，面對陌生人不妨大膽一點。"
+        data-note-transition="不過，人不能被貼上死標籤！下一頁我們看如何跳脫標籤陷阱，執行「感覺→驗證→選擇」三步實戰。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">09 · PRINCIPLE 3: ADAPTABILITY · 以直報怨 ✕ TKI 五維衝突模型</span>
+            <span class="slide-pacing">建議節奏 06:00–06:40</span>
+          </div>
+          <h2 class="action-title">善良不是永遠同一種表情——以<em>「以直報怨」</em>為骨，依 <em>TKI 雙維度</em>切換五策略</h2>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2-wide">
+            <!-- Left: SVG TKI Matrix -->
+            <div class="svg-box" style="padding:12px;">
+              <svg viewBox="0 0 680 430" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+                <defs>
+                  <marker id="arr-axis" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+                    <path d="M0,1 L9,5 L0,9 z" fill="#0B1F3A"/>
+                  </marker>
+                </defs>
+                <text x="360" y="24" text-anchor="middle" fill="#0B1F3A" font-size="16" font-weight="700">TKI 衝突模型（Thomas-Kilmann Instrument）</text>
+
+                <!-- Highlight Lower Half (~70% Empirical Finding) -->
+                <rect x="86" y="230" width="564" height="148" rx="10" fill="#FEF7E8" stroke="#E0A84B" stroke-width="1.5" stroke-dasharray="6,4"/>
+                <text x="640" y="370" text-anchor="end" fill="#B4771E" font-size="12" font-weight="700">★ 實測 37,000+ 城市中產：近 70% 落於「下半區」（較不傾向正面為難）</text>
+
+                <!-- Axes -->
+                <line x1="86" y1="382" x2="86" y2="44" stroke="#0B1F3A" stroke-width="2.4" marker-end="url(#arr-axis)"/>
+                <line x1="86" y1="382" x2="656" y2="382" stroke="#0B1F3A" stroke-width="2.4" marker-end="url(#arr-axis)"/>
+
+                <!-- Axis Labels -->
+                <text x="42" y="210" text-anchor="middle" fill="#0B1F3A" font-size="13.5" font-weight="700" transform="rotate(-90 42 210)">堅持性（捍衛自身利益程度）→ 高</text>
+                <text x="370" y="412" text-anchor="middle" fill="#0B1F3A" font-size="13.5" font-weight="700">合作性（滿足對方需求意願）→ 高</text>
+
+                <!-- Competing (Top-Left) -->
+                <rect x="108" y="58" width="176" height="92" rx="10" fill="#0B1F3A"/>
+                <text x="196" y="88" text-anchor="middle" fill="#E0A84B" font-size="16" font-weight="700">競爭 Competing</text>
+                <text x="196" y="112" text-anchor="middle" fill="#FFFFFF" font-size="13">高堅持 ✕ 低合作</text>
+                <text x="196" y="135" text-anchor="middle" fill="#CBD5E1" font-size="12">大白話：該爭的爭</text>
+
+                <!-- Collaborating (Top-Right) -->
+                <rect x="454" y="58" width="176" height="92" rx="10" fill="#0F766E"/>
+                <text x="542" y="88" text-anchor="middle" fill="#FDE6B8" font-size="16" font-weight="700">合作 Collaborating</text>
+                <text x="542" y="112" text-anchor="middle" fill="#FFFFFF" font-size="13">高堅持 ✕ 高合作</text>
+                <text x="542" y="135" text-anchor="middle" fill="#CCFBF1" font-size="12">大白話：都重要就一起想辦法</text>
+
+                <!-- Compromising (Center) -->
+                <rect x="281" y="168" width="176" height="86" rx="10" fill="#1E4270" stroke="#E0A84B" stroke-width="2"/>
+                <text x="369" y="196" text-anchor="middle" fill="#E0A84B" font-size="16" font-weight="700">妥協 Compromising</text>
+                <text x="369" y="219" text-anchor="middle" fill="#FFFFFF" font-size="12.5">中堅持 ✕ 中合作</text>
+                <text x="369" y="241" text-anchor="middle" fill="#CBD5E1" font-size="12">大白話：時間不夠各退一步</text>
+
+                <!-- Avoiding (Bottom-Left) -->
+                <rect x="108" y="264" width="176" height="86" rx="10" fill="#FFFFFF" stroke="#64748B" stroke-width="2"/>
+                <text x="196" y="292" text-anchor="middle" fill="#0B1F3A" font-size="16" font-weight="700">迴避 Avoiding</text>
+                <text x="196" y="314" text-anchor="middle" fill="#475569" font-size="12.5">低堅持 ✕ 低合作</text>
+                <text x="196" y="336" text-anchor="middle" fill="#64748B" font-size="12">大白話：不值得就躲開</text>
+
+                <!-- Accommodating (Bottom-Right) -->
+                <rect x="454" y="264" width="176" height="86" rx="10" fill="#FFFFFF" stroke="#C88A2E" stroke-width="2"/>
+                <text x="542" y="292" text-anchor="middle" fill="#B4771E" font-size="16" font-weight="700">退讓 Accommodating</text>
+                <text x="542" y="314" text-anchor="middle" fill="#475569" font-size="12.5">低堅持 ✕ 高合作</text>
+                <text x="542" y="336" text-anchor="middle" fill="#64748B" font-size="12">大白話：該讓的讓</text>
+              </svg>
+            </div>
+
+            <!-- Right: Confucius + Empirical Data -->
+            <div style="display:flex;flex-direction:column;gap:14px;">
+              <div class="mc-card navy-top">
+                <div class="card-label">PHILOSOPHICAL ANCHOR · 《論語·憲問》</div>
+                <h3 class="card-title">何以報德？以直報怨，以德報德</h3>
+                <ul class="mc-list">
+                  <li>若拿最大善意回應惡意，就沒東西回報善意；對侵犯邊界者持續坦露，是<strong>識別系統無能</strong>。</li>
+                  <li><strong>「直」</strong>＝正直、耿介、應當——事情應該怎麼辦，就怎麼辦。</li>
+                </ul>
+              </div>
+
+              <div class="mc-card gold-top" style="flex:1;">
+                <div class="card-label">EMPIRICAL DATA · 熊浩 37,000+ 樣本測驗</div>
+                <h3 class="card-title">近七成城市中產落於「下半區」</h3>
+                <div style="font-size:38px;font-weight:800;color:#C88A2E;line-height:1.1;margin:6px 0;">≈ 70%</div>
+                <p style="margin:0;font-size:13.5px;color:#334155;line-height:1.6;">
+                  實測三萬七千多名中國城市中產，近七成屬於偏向迴避／退讓／溫和的下半區人格。這給你一個底氣：<strong>面對陌生人，對方大概率不會與你為難，不妨大膽溝通一點。</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">口訣：該爭的爭、該讓的讓、不值得就躲開、都重要就一起想辦法、時間不夠就各退一步。</span>
+          <span class="page-num">10 / 15</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 11 : 原則三「應變」情境覺察與三步操作法
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="10 · 原則三：應變（三步實戰法）"
+        data-title="人不是固定標籤而是被情境激活，高質量應變必須執行「感覺 → 驗證 → 選擇」"
+        data-note-conclusion="應變不是把人貼上性格標籤，而是透過「感覺、驗證、選擇」三步驟，在不強迫對方套用自己系統的前提下精準應對。"
+        data-note-evidence="人格心理學發現人的穩定性體現在相似觸發條件下的反應：職場競爭激烈的人在家可能極度退讓；小事妥協的人在核心價值上寸步不讓。因此第一步讓自己成為靈敏皮膚；第二步把直覺變問題（例：我不確定有沒有理解對，你擔心的似乎是承諾無法交付對嗎？）避免直覺變偏見；第三步依當下選擇推進/讓步/暫停/交換/共創。"
+        data-note-transition="即便做到清晰、友善、應變，難免還是有說錯話、已經造成傷害的時候。接下來進入最後一道關口——「重啟」。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">10 · SITUATIONAL ADAPTABILITY · 打破標籤 ✕ 三步應變操作法</span>
+            <span class="slide-pacing">建議節奏 06:40–07:20</span>
+          </div>
+          <h2 class="action-title">人不是固定標籤而是被<em>情境激活</em>，高質量應變必須執行<em>「感覺 → 驗證 → 選擇」</em></h2>
+        </div>
+
+        <div class="slide-body" style="gap:16px;">
+          <!-- Top SVG: 3-Step Flow -->
+          <div class="svg-box" style="height:215px;padding:12px;">
+            <svg viewBox="0 0 1120 190" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <defs>
+                <marker id="arr-s11" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+                  <path d="M0,1 L9,5 L0,9 z" fill="#C88A2E"/>
+                </marker>
+              </defs>
+              <!-- Step 1 -->
+              <rect x="14" y="14" width="326" height="162" rx="12" fill="#0B1F3A"/>
+              <text x="36" y="46" fill="#E0A84B" font-size="13" font-weight="700">STEP 01 · SENSE</text>
+              <text x="36" y="76" fill="#FFFFFF" font-size="22" font-weight="700">感覺（靈敏的皮膚）</text>
+              <text x="36" y="108" fill="#CBD5E1" font-size="13.5">• 關閉「急於分類貼標籤的機器」</text>
+              <text x="36" y="133" fill="#CBD5E1" font-size="13.5">• 敏銳捕捉當下情緒、壓力與情境訊號</text>
+              <text x="36" y="158" fill="#FDE6B8" font-size="12.5">戒除：「他就是競爭型／只會迴避」</text>
+
+              <line x1="340" y1="95" x2="386" y2="95" stroke="#C88A2E" stroke-width="3" marker-end="url(#arr-s11)"/>
+
+              <!-- Step 2 -->
+              <rect x="396" y="14" width="326" height="162" rx="12" fill="#FEF7E8" stroke="#C88A2E" stroke-width="2.4"/>
+              <text x="418" y="46" fill="#B4771E" font-size="13" font-weight="700">STEP 02 · VERIFY</text>
+              <text x="418" y="76" fill="#0B1F3A" font-size="22" font-weight="700">驗證（直覺變提問）</text>
+              <text x="418" y="108" fill="#334155" font-size="13.5">• 直覺若不接受驗證，就會淪為偏見</text>
+              <text x="418" y="133" fill="#334155" font-size="13.5">• 用開放、謙遜的校準語句向對方確認</text>
+              <text x="418" y="158" fill="#B4771E" font-size="12.5" font-weight="700">核心：把「我以為」改寫成「對嗎？」</text>
+
+              <line x1="722" y1="95" x2="768" y2="95" stroke="#C88A2E" stroke-width="3" marker-end="url(#arr-s11)"/>
+
+              <!-- Step 3 -->
+              <rect x="778" y="14" width="328" height="162" rx="12" fill="#0F766E"/>
+              <text x="800" y="46" fill="#FDE6B8" font-size="13" font-weight="700">STEP 03 · CHOOSE</text>
+              <text x="800" y="76" fill="#FFFFFF" font-size="22" font-weight="700">選擇（動態匹配策略）</text>
+              <text x="800" y="108" fill="#CCFBF1" font-size="13.5">• 在此時此刻，精準拍板五種行動之一：</text>
+              <text x="800" y="134" fill="#FFFFFF" font-size="14" font-weight="700">  推進 · 讓步 · 暫停 · 交換 · 共創</text>
+              <text x="800" y="158" fill="#FDE6B8" font-size="12.5">讓策略服務目標，而非服務情緒</text>
+            </svg>
+          </div>
+
+          <!-- Bottom Two Cards -->
+          <div class="grid-2">
+            <div class="mc-card navy-top">
+              <div class="card-label">PSYCHOLOGY INSIGHT · 破除性格標籤化</div>
+              <h3 class="card-title">同一個人在不同觸發情境下，會有截然不同的反應</h3>
+              <ul class="mc-list">
+                <li><strong>職場 vs 家庭：</strong>在職場競爭極度激烈的主管，回到家可能極度退讓。</li>
+                <li><strong>小事 vs 底線：</strong>在日常小事隨和妥協的夥伴，碰觸核心價值時可能寸步不讓。</li>
+                <li><strong>管理啟示：</strong>溝通要讀懂「此刻的情境觸發點」，而不是拿靜態性格分類套死對方。</li>
+              </ul>
+            </div>
+
+            <div class="mc-card gold-top">
+              <div class="card-label">READY-TO-USE SCRIPT · 第二步「驗證」標準示範話術</div>
+              <h3 class="card-title">把腦中猜測轉為低防禦校準提問</h3>
+              <div style="background:#F8FAFC;border-left:4px solid #0B1F3A;padding:12px 14px;border-radius:0 8px 8px 0;font-size:14.5px;color:#0B1F3A;font-weight:600;line-height:1.65;margin-bottom:10px;">
+                「我不確定自己有沒有理解對。你似乎最擔心的不是價格，而是承諾之後無法交付，對嗎？」
+              </div>
+              <p style="margin:0;font-size:13px;color:#475569;">
+                <strong>哲學定錨：</strong>應變不是見風使舵，而是<strong>不強迫所有人都使用你的判斷系統</strong>。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">先做靈敏皮膚、再用提問驗證直覺、最後當下選擇策略——拒絕標籤化，尊重情境差異。</span>
+          <span class="page-num">11 / 15</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 12 : 原則四「重啟」情緒分離與雙重鏡頭
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="11 · 原則四：重啟（情緒與雙鏡頭）"
+        data-title="重啟是「停止讓過去壟斷未來」——先做情緒標記，再用時間與敘事雙鏡頭找分岔點"
+        data-note-conclusion="說錯話、造成傷害之後，假裝沒事是逃避；真正的重啟始於抽離情緒身份，並用時間與敘事兩副鏡頭重構真相。"
+        data-note-evidence="第一步「情緒標記」：不說『我是一個憤怒的人』，改說『我注意到，憤怒正在發生』，拉開人與感受距離。第二步「時間鏡頭」：拆穿衝突偷剪時間的停頓點（只剪發火前10秒，漏掉前一個月的忽視）。第三步「敘事鏡頭」：雙方活在兩部不同電影裡，試著寫出對方真誠相信的版本，精準定位事實分岔點。"
+        data-note-transition="看清情緒與事實分岔點後，具體該怎麼開口道歉與修復？下一頁給出無懈可擊的「四步修復公式」。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">11 · PRINCIPLE 4: RESET (PART 1) · 情緒標記 ✕ 時間與敘事雙鏡頭</span>
+            <span class="slide-pacing">建議節奏 07:20–08:00</span>
+          </div>
+          <h2 class="action-title">重啟是<em>「停止讓過去壟斷未來」</em>——先做情緒標記，再用<em>時間與敘事雙鏡頭</em>找分岔點</h2>
+        </div>
+
+        <div class="slide-body" style="gap:16px;">
+          <!-- Top Bar: Emotion Labeling -->
+          <div class="svg-box" style="height:126px;padding:10px 16px;">
+            <svg viewBox="0 0 1120 104" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <defs>
+                <marker id="arr-em" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#C88A2E"/></marker>
+              </defs>
+              <rect x="8" y="10" width="230" height="84" rx="10" fill="#0B1F3A"/>
+              <text x="123" y="42" text-anchor="middle" fill="#E0A84B" font-size="13" font-weight="700">重啟起手式：情緒標記</text>
+              <text x="123" y="68" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="700">將「情緒」從「身份」分離</text>
+
+              <rect x="262" y="14" width="330" height="76" rx="10" fill="#FEF2F2" stroke="#FCA5A5"/>
+              <text x="427" y="42" text-anchor="middle" fill="#B91C1C" font-size="13" font-weight="700">✗ 綁定身份（陷入對立與自責）</text>
+              <text x="427" y="69" text-anchor="middle" fill="#334155" font-size="15" font-weight="700">「我是一個憤怒的人」／「別生氣」</text>
+
+              <line x1="594" y1="52" x2="650" y2="52" stroke="#C88A2E" stroke-width="3" marker-end="url(#arr-em)"/>
+
+              <rect x="660" y="14" width="450" height="76" rx="10" fill="#F0FDFA" stroke="#0F766E" stroke-width="2"/>
+              <text x="885" y="42" text-anchor="middle" fill="#0F766E" font-size="13" font-weight="700">✓ 命名抽離（人與感受之間拉出安全距離）</text>
+              <text x="885" y="69" text-anchor="middle" fill="#0B1F3A" font-size="15" font-weight="700">「我注意到，憤怒正在發生。」</text>
+            </svg>
+          </div>
+
+          <!-- Bottom Two Lenses -->
+          <div class="grid-2">
+            <!-- Lens 1: Time Lens -->
+            <div class="mc-card navy-top" style="gap:10px;">
+              <div>
+                <div class="card-label">LENS 01 · 時間鏡頭（擴大「停頓點」）</div>
+                <h3 class="card-title">衝突會偷偷剪輯時間——把被剪掉的前因與後果接回來</h3>
+              </div>
+
+              <div class="svg-box" style="border:none;padding:2px;height:130px;">
+                <svg viewBox="0 0 510 120" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+                  <line x1="20" y1="60" x2="490" y2="60" stroke="#CBD5E1" stroke-width="4"/>
+                  <!-- Left cut -->
+                  <rect x="20" y="24" width="146" height="72" rx="8" fill="#F8FAFC" stroke="#94A3B8" stroke-dasharray="4,3"/>
+                  <text x="93" y="52" text-anchor="middle" fill="#64748B" font-size="12" font-weight="700">被剪掉的前因</text>
+                  <text x="93" y="74" text-anchor="middle" fill="#475569" font-size="11.5">前一個月累積的忽視</text>
+                  <!-- Center highlight -->
+                  <rect x="182" y="16" width="146" height="88" rx="8" fill="#FEF2F2" stroke="#B91C1C" stroke-width="2"/>
+                  <text x="255" y="46" text-anchor="middle" fill="#B91C1C" font-size="12.5" font-weight="700">衝突停頓點（特寫）</text>
+                  <text x="255" y="68" text-anchor="middle" fill="#0B1F3A" font-size="13" font-weight="700">發火前 10 秒</text>
+                  <text x="255" y="88" text-anchor="middle" fill="#64748B" font-size="11">今天的單一傷害</text>
+                  <!-- Right cut -->
+                  <rect x="344" y="24" width="146" height="72" rx="8" fill="#FEF7E8" stroke="#C88A2E" stroke-dasharray="4,3"/>
+                  <text x="417" y="52" text-anchor="middle" fill="#B4771E" font-size="12" font-weight="700">被擋住的未來</text>
+                  <text x="417" y="74" text-anchor="middle" fill="#475569" font-size="11.5">一年後可能的變化</text>
+                </svg>
+              </div>
+              <p style="margin:0;font-size:13px;color:#475569;">
+                同一個故事從哪裡開始、在哪裡結束，會直接改寫我們對責任與意義的判斷。
+              </p>
+            </div>
+
+            <!-- Lens 2: Narrative Lens -->
+            <div class="mc-card gold-top" style="gap:10px;">
+              <div>
+                <div class="card-label">LENS 02 · 敘事鏡頭（兩部不同的電影）</div>
+                <h3 class="card-title">寫出對方「真誠相信的版本」，定位事實分岔節點</h3>
+              </div>
+
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+                <div style="padding:12px;border-radius:8px;background:#F1F5F9;border-top:3px solid #0B1F3A;">
+                  <div style="font-size:11.5px;font-weight:700;color:#0B1F3A;margin-bottom:4px;">電影 A（我的記憶）</div>
+                  <div style="font-size:13px;color:#334155;">「他在眾人面前直接否定了我，根本不給面子。」</div>
+                </div>
+                <div style="padding:12px;border-radius:8px;background:#FEF7E8;border-top:3px solid #C88A2E;">
+                  <div style="font-size:11.5px;font-weight:700;color:#B4771E;margin-bottom:4px;">電影 B（對方的記憶）</div>
+                  <div style="font-size:13px;color:#334155;">「我多次提醒專案風險，卻始終沒有人重視。」</div>
+                </div>
+              </div>
+
+              <div class="callout-navy" style="font-size:12.8px;">
+                <strong>目的澄清：</strong>寫出你不同意但對方真誠相信的版本，不是為了證明他對或取消責任，而是找到雙方究竟在哪個<strong>事實節點分了岔</strong>。
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">假裝沒發生或要求受害者大度不是重啟而是逃避；先穩情緒、再擴張時間與敘事視角。</span>
+          <span class="page-num">12 / 15</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 13 : 原則四「重啟」四步修復公式與雙向出口
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="12 · 原則四：重啟（四步修復與出口）"
+        data-title="淘汰「對不起讓你不高興了」：落實四步修復公式，接受和解或離開皆為重啟"
+        data-note-conclusion="真正的重啟不是一句「算了」，而是用四步修復公式為未來重新設計條件；方向可以是和解，也可以是劃清邊界。"
+        data-note-evidence="「對不起，讓你不高興了」無效是因為只認情緒不認錯。標準四步：① 承認感受 ② 承擔責任 ③ 具體補救與防重演 ④ 面向未來關係。書中會議打斷範本一句不落示範了全部四步。重啟不保證團圓，只保證不再被舊搏斗無限佔用，只要錯誤到此為止、正確重新開始，就是重啟。"
+        data-note-transition="四大原則皆已拆解完畢。接下來我們用一頁總結這四道關口如何首尾相連，構成完整的溝通護城河。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">12 · PRINCIPLE 4: RESET (PART 2) · 四步修復公式 ✕ 重啟雙向出口</span>
+            <span class="slide-pacing">建議節奏 08:00–08:40</span>
+          </div>
+          <h2 class="action-title">淘汰「對不起讓你不高興了」：落實<em>四步修復公式</em>，接受<em>和解或離開</em>皆為重啟</h2>
+        </div>
+
+        <div class="slide-body" style="gap:16px;">
+          <!-- Top SVG: 4-Step Repair + Dual Exits -->
+          <div class="svg-box" style="height:196px;padding:10px 14px;">
+            <svg viewBox="0 0 1120 176" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <defs>
+                <marker id="arr-r13" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#0B1F3A"/></marker>
+                <marker id="arr-g13" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#C88A2E"/></marker>
+              </defs>
+              <!-- Step 1 -->
+              <rect x="8" y="22" width="186" height="132" rx="10" fill="#0B1F3A"/>
+              <text x="101" y="50" text-anchor="middle" fill="#E0A84B" font-size="12" font-weight="700">修復 01</text>
+              <text x="101" y="76" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">承認對方感受</text>
+              <text x="101" y="106" text-anchor="middle" fill="#CBD5E1" font-size="12">看見並接住對方的</text>
+              <text x="101" y="126" text-anchor="middle" fill="#CBD5E1" font-size="12">委屈與不被尊重感</text>
+              <line x1="194" y1="88" x2="218" y2="88" stroke="#0B1F3A" stroke-width="2.2" marker-end="url(#arr-r13)"/>
+
+              <!-- Step 2 -->
+              <rect x="224" y="22" width="186" height="132" rx="10" fill="#132E52"/>
+              <text x="317" y="50" text-anchor="middle" fill="#E0A84B" font-size="12" font-weight="700">修復 02</text>
+              <text x="317" y="76" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">說清自身責任</text>
+              <text x="317" y="106" text-anchor="middle" fill="#CBD5E1" font-size="12">直陳自己做錯的行為</text>
+              <text x="317" y="126" text-anchor="middle" fill="#CBD5E1" font-size="12">絕不推諉或含混帶過</text>
+              <line x1="410" y1="88" x2="434" y2="88" stroke="#0B1F3A" stroke-width="2.2" marker-end="url(#arr-r13)"/>
+
+              <!-- Step 3 -->
+              <rect x="440" y="22" width="186" height="132" rx="10" fill="#1E4270"/>
+              <text x="533" y="50" text-anchor="middle" fill="#E0A84B" font-size="12" font-weight="700">修復 03</text>
+              <text x="533" y="76" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">補救與防重演</text>
+              <text x="533" y="106" text-anchor="middle" fill="#CBD5E1" font-size="12">提出具體彌補措施</text>
+              <text x="533" y="126" text-anchor="middle" fill="#CBD5E1" font-size="12">與下次的行為承諾</text>
+              <line x1="626" y1="88" x2="650" y2="88" stroke="#0B1F3A" stroke-width="2.2" marker-end="url(#arr-r13)"/>
+
+              <!-- Step 4 -->
+              <rect x="656" y="22" width="186" height="132" rx="10" fill="#C88A2E"/>
+              <text x="749" y="50" text-anchor="middle" fill="#0B1F3A" font-size="12" font-weight="700">修復 04</text>
+              <text x="749" y="76" text-anchor="middle" fill="#FFFFFF" font-size="16" font-weight="700">面向未來關係</text>
+              <text x="749" y="106" text-anchor="middle" fill="#FEF7E8" font-size="12">說明重視這段合作</text>
+              <text x="749" y="126" text-anchor="middle" fill="#FEF7E8" font-size="12">邀請對方提出需求</text>
+
+              <!-- Fork to Dual Exits -->
+              <path d="M842,66 C872,66 872,48 898,48" fill="none" stroke="#C88A2E" stroke-width="2.4" marker-end="url(#arr-g13)"/>
+              <path d="M842,110 C872,110 872,128 898,128" fill="none" stroke="#C88A2E" stroke-width="2.4" marker-end="url(#arr-g13)"/>
+
+              <rect x="906" y="16" width="204" height="64" rx="10" fill="#F0FDFA" stroke="#0F766E" stroke-width="2"/>
+              <text x="1008" y="42" text-anchor="middle" fill="#0F766E" font-size="14" font-weight="700">出口 A：和解與繼續</text>
+              <text x="1008" y="64" text-anchor="middle" fill="#334155" font-size="12">值得重新信任，升級合作</text>
+
+              <rect x="906" y="96" width="204" height="64" rx="10" fill="#F8FAFC" stroke="#64748B" stroke-width="2"/>
+              <text x="1008" y="122" text-anchor="middle" fill="#0B1F3A" font-size="14" font-weight="700">出口 B：劃界與離開</text>
+              <text x="1008" y="144" text-anchor="middle" fill="#334155" font-size="12">重新劃定邊界，終止消耗</text>
+            </svg>
+          </div>
+
+          <!-- Bottom: Bad vs Good Apology Breakdown -->
+          <div class="grid-2-left">
+            <div class="mc-card red-top">
+              <div class="card-label">WHY IT FAILS · 無效道歉反例</div>
+              <h3 class="card-title">「對不起，讓你不高興了。」</h3>
+              <ul class="mc-list">
+                <li><strong>致命漏洞：</strong>只承認對方有情緒，卻完全沒有承認「自己做錯了什麼」。</li>
+                <li>聽在對方耳裡等同「是你太敏感／小氣」，往往火上澆油。</li>
+              </ul>
+              <div class="callout-gold" style="font-size:12.5px;">
+                重啟不保證團圓；只要讓錯誤到此為止、讓正確重新開始，無論繼續或離開都是重啟。
+              </div>
+            </div>
+
+            <div class="mc-card teal-top">
+              <div class="card-label">GOLD STANDARD · 會議打斷道歉範本（四件事一句不落）</div>
+              <table class="mc-table">
+                <tbody>
+                  <tr>
+                    <td style="width:22%;"><strong>① 擔責</strong></td>
+                    <td>「昨天我在大家面前打斷你，還用了帶有否定意味的話，<strong>這是我的問題</strong>。」</td>
+                  </tr>
+                  <tr>
+                    <td><strong>② 認感受</strong></td>
+                    <td>「<strong>我能理解</strong>你會覺得不被尊重。」</td>
+                  </tr>
+                  <tr>
+                    <td><strong>③ 補救防重演</strong></td>
+                    <td>「<strong>下次會議我會讓你先完整講完</strong>，今天也願意向在場的人說明是我處理失當。」</td>
+                  </tr>
+                  <tr>
+                    <td><strong>④ 面向未來</strong></td>
+                    <td>「<strong>我們的合作對我很重要</strong>，我希望聽聽你還需要我做什麼。」</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">重啟不是一句「算了」，而是透過四步修復為未來重新設計條件，不再被舊搏斗無限佔用。</span>
+          <span class="page-num">13 / 15</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 14 : 全書章節脈絡串聯
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="13 · 章節論證脈絡串聯"
+        data-title="四條原則構成連貫「四道關口」，把衝突管理的極端智慧化為日常從容與太極忘招之美"
+        data-note-conclusion="整本書層層遞進：從校準訊號、蓄足安全感、情境應變到重啟解放，最終目的是卸下繁雜招式的負累。"
+        data-note-evidence="作者用兩個經典隱喻收束全書：① 心理學演進——早期聚焦病理困境，現代普通心理學則讓常態下每個人心中的光芒更閃耀；衝突解決正是日常溝通智慧的源泉。② 陳氏太極三十二定式與張三豐教張無忌反覆問『你忘了嗎』——不是遺忘，而是卸除教條負累，以簡馭繁。"
+        data-note-transition="最後一頁，我們將全書精華濃縮成可立刻放進口袋的「八字心法」與「發言前一分鐘四問」，幫助自己與團隊馬上落地。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">13 · LOGICAL SYNTHESIS · 全書論證脈絡串聯與底層哲思</span>
+            <span class="slide-pacing">建議節奏 08:40–09:20</span>
+          </div>
+          <h2 class="action-title">四條原則構成連貫<em>「四道關口」</em>，把衝突極端智慧化為日常從容與<em>太極忘招之美</em></h2>
+        </div>
+
+        <div class="slide-body" style="gap:16px;">
+          <!-- Causal Chain SVG -->
+          <div class="svg-box" style="height:245px;padding:12px;">
+            <svg viewBox="0 0 1120 225" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+              <defs>
+                <marker id="arr-c14" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,1 L9,5 L0,9 z" fill="#C88A2E"/></marker>
+              </defs>
+              <text x="560" y="22" text-anchor="middle" fill="#0B1F3A" font-size="15.5" font-weight="700">四道關口如何環環相扣、一步步將人從「防禦與受害」推向「從容行動者」</text>
+
+              <!-- Node 1 -->
+              <rect x="12" y="42" width="246" height="164" rx="10" fill="#F8FAFC" stroke="#0B1F3A" stroke-width="2"/>
+              <text x="135" y="68" text-anchor="middle" fill="#C88A2E" font-size="12" font-weight="800">關口 1 · 訊號校準</text>
+              <text x="135" y="94" text-anchor="middle" fill="#0B1F3A" font-size="18" font-weight="700">清晰</text>
+              <text x="28" y="122" fill="#334155" font-size="12.5">檢驗發出與收到是否一致。</text>
+              <text x="28" y="144" fill="#334155" font-size="12.5">戰勝的不只是表達笨拙，</text>
+              <text x="28" y="166" fill="#0B1F3A" font-size="12.5" font-weight="700">更是對模糊依賴與袒露恐懼。</text>
+              <line x1="258" y1="124" x2="290" y2="124" stroke="#C88A2E" stroke-width="2.6" marker-end="url(#arr-c14)"/>
+
+              <!-- Node 2 -->
+              <rect x="298" y="42" width="246" height="164" rx="10" fill="#F8FAFC" stroke="#132E52" stroke-width="2"/>
+              <text x="421" y="68" text-anchor="middle" fill="#C88A2E" font-size="12" font-weight="800">關口 2 · 關係升溫</text>
+              <text x="421" y="94" text-anchor="middle" fill="#0B1F3A" font-size="18" font-weight="700">友善</text>
+              <text x="314" y="122" fill="#334155" font-size="12.5">先釋善意、見敵意後的不安。</text>
+              <text x="314" y="144" fill="#334155" font-size="12.5">不是勸人當濫好人，而是</text>
+              <text x="314" y="166" fill="#0B1F3A" font-size="12.5" font-weight="700">獲得安全感，不再靠犀利證明。</text>
+              <line x1="544" y1="124" x2="576" y2="124" stroke="#C88A2E" stroke-width="2.6" marker-end="url(#arr-c14)"/>
+
+              <!-- Node 3 -->
+              <rect x="584" y="42" width="246" height="164" rx="10" fill="#F8FAFC" stroke="#1E4270" stroke-width="2"/>
+              <text x="707" y="68" text-anchor="middle" fill="#C88A2E" font-size="12" font-weight="800">關口 3 · 邊界與彈性</text>
+              <text x="707" y="94" text-anchor="middle" fill="#0B1F3A" font-size="18" font-weight="700">應變</text>
+              <text x="600" y="122" fill="#334155" font-size="12.5">對人的覺知與對事的分類。</text>
+              <text x="600" y="144" fill="#334155" font-size="12.5">沒有一種善良適用所有對象，</text>
+              <text x="600" y="166" fill="#0B1F3A" font-size="12.5" font-weight="700">人非標籤，而是被情境激活。</text>
+              <line x1="830" y1="124" x2="862" y2="124" stroke="#C88A2E" stroke-width="2.6" marker-end="url(#arr-c14)"/>
+
+              <!-- Node 4 -->
+              <rect x="870" y="42" width="238" height="164" rx="10" fill="#0B1F3A"/>
+              <text x="989" y="68" text-anchor="middle" fill="#E0A84B" font-size="12" font-weight="800">關口 4 · 解放與再生</text>
+              <text x="989" y="94" text-anchor="middle" fill="#FFFFFF" font-size="18" font-weight="700">重啟</text>
+              <text x="886" y="122" fill="#CBD5E1" font-size="12.5">看見已發生的不粉飾，</text>
+              <text x="886" y="144" fill="#CBD5E1" font-size="12.5">看見仍有可能的去開啟：</text>
+              <text x="886" y="166" fill="#FDE6B8" font-size="12.5" font-weight="700">從過去受害者 → 未來行動者。</text>
+            </svg>
+          </div>
+
+          <!-- Two Metaphors -->
+          <div class="grid-2">
+            <div class="mc-card navy-top">
+              <div class="card-label">METAPHOR 01 · 心理學的演進</div>
+              <h3 class="card-title">從「處理病理僵局」走向「點亮日常光芒」</h3>
+              <p style="margin:0;font-size:13.5px;color:#334155;line-height:1.65;">
+                早期心理學只聚焦病理困境，而現代普通心理學探索如何在常態下讓潛藏於人心中的光芒更閃耀。衝突解決亦然——它是激發千千萬萬平常人際交往智慧的源泉。
+              </p>
+            </div>
+
+            <div class="mc-card gold-top">
+              <div class="card-label">METAPHOR 02 · 陳氏太極與張三豐忘招</div>
+              <h3 class="card-title">「你忘了嗎？」——不是遺忘，而是對負累的解脫</h3>
+              <p style="margin:0;font-size:13.5px;color:#334155;line-height:1.65;">
+                陳氏太極三十二定式不追求繁雜，掌握有限幾式便足以應對萬千變化。過多教條招式只會讓人在關鍵時刻無所適從；卸下冗雜，才能游刃有餘。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">少即是多：四道關口層層遞進，讓你從被動應對的受害者，蛻變為走向未來的從容行動者。</span>
+          <span class="page-num">14 / 15</span>
+        </div>
+      </section>
+
+      <!-- ================================================================
+           SLIDE 15 : 總結與立刻落地行動
+           ================================================================ -->
+      <section class="slide"
+        data-kicker="14 · 總結與立刻落地行動"
+        data-title="不要背負整座知識倉庫走人生長路——帶走八字心法與「發言前一分鐘四問」"
+        data-note-conclusion="讀完本書只需要帶走「清晰、友善、應變、重啟」八個字，並在下一次重要發言前花一分鐘完成四問快篩。"
+        data-note-evidence="熊浩親述個人習慣：所有重要發言前哪怕只有一兩分鐘空隙，必過四問（意圖與誤會、對方期待與變通、推進讓步或暫停、搞砸怎麼修復）。搭配個人與團隊三項即刻行動，將書本原則轉化為團隊日常作業標準。"
+        data-note-transition="感謝聆聽！點擊左上角返回知識庫首頁，即可直接使用互動版「一分鐘四問預演工具」並記錄您的團隊實踐心得。">
+        <div class="slide-header">
+          <div class="slide-kicker-row">
+            <span class="slide-kicker">14 · EXECUTIVE SUMMARY &amp; IMMEDIATE ACTION · 總結與即刻落地</span>
+            <span class="slide-pacing">建議節奏 09:20–10:00</span>
+          </div>
+          <h2 class="action-title">不要背負整座知識倉庫走人生長路——帶走<em>八字心法</em>與<em>「發言前一分鐘四問」</em></h2>
+        </div>
+
+        <div class="slide-body">
+          <div class="grid-2-wide">
+            <!-- Left: SVG 1-Minute 4-Question Checklist Dashboard -->
+            <div class="svg-box" style="padding:14px;">
+              <svg viewBox="0 0 680 430" xmlns="http://www.w3.org/2000/svg" font-family="'Noto Sans TC', sans-serif">
+                <text x="16" y="26" fill="#0B1F3A" font-size="16" font-weight="700">熊浩親述實戰工具：重要發言前 1–2 分鐘必過「四問快篩」</text>
+
+                <!-- Q1 -->
+                <rect x="16" y="44" width="648" height="82" rx="10" fill="#F8FAFC" stroke="#0B1F3A" stroke-width="1.8"/>
+                <rect x="16" y="44" width="118" height="82" rx="10" fill="#0B1F3A"/>
+                <text x="75" y="79" text-anchor="middle" fill="#E0A84B" font-size="13" font-weight="700">Q1 · 清晰</text>
+                <text x="75" y="103" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="700">校準訊號</text>
+                <text x="152" y="79" fill="#0B1F3A" font-size="16" font-weight="700">我的核心意圖是什麼，會不會被誤會？</text>
+                <text x="152" y="106" fill="#475569" font-size="13">消除含混代詞，主動承擔清晰代價，不把解碼成本丟給對方。</text>
+
+                <!-- Q2 -->
+                <rect x="16" y="138" width="648" height="82" rx="10" fill="#F8FAFC" stroke="#132E52" stroke-width="1.8"/>
+                <rect x="16" y="138" width="118" height="82" rx="10" fill="#132E52"/>
+                <text x="75" y="173" text-anchor="middle" fill="#E0A84B" font-size="13" font-weight="700">Q2 · 友善</text>
+                <text x="75" y="197" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="700">覺知召喚</text>
+                <text x="152" y="173" fill="#0B1F3A" font-size="16" font-weight="700">對方的核心期待是什麼，我需不需要做變通？</text>
+                <text x="152" y="200" fill="#475569" font-size="13">先釋放善意、滿足「被看重／有歸屬／能做主」，喚醒對方好版本。</text>
+
+                <!-- Q3 -->
+                <rect x="16" y="232" width="648" height="82" rx="10" fill="#F8FAFC" stroke="#1E4270" stroke-width="1.8"/>
+                <rect x="16" y="232" width="118" height="82" rx="10" fill="#1E4270"/>
+                <text x="75" y="267" text-anchor="middle" fill="#E0A84B" font-size="13" font-weight="700">Q3 · 應變</text>
+                <text x="75" y="291" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="700">匹配情勢</text>
+                <text x="152" y="267" fill="#0B1F3A" font-size="16" font-weight="700">現在這個狀況，我該推進、讓步還是暫停？</text>
+                <text x="152" y="294" fill="#475569" font-size="13">以直報怨、先驗證直覺再依 TKI 動態拍板，拒絕刻板標籤。</text>
+
+                <!-- Q4 -->
+                <rect x="16" y="326" width="648" height="82" rx="10" fill="#FEF7E8" stroke="#C88A2E" stroke-width="2"/>
+                <rect x="16" y="326" width="118" height="82" rx="10" fill="#C88A2E"/>
+                <text x="75" y="361" text-anchor="middle" fill="#0B1F3A" font-size="13" font-weight="700">Q4 · 重啟</text>
+                <text x="75" y="385" text-anchor="middle" fill="#FFFFFF" font-size="15" font-weight="700">預備修復</text>
+                <text x="152" y="361" fill="#0B1F3A" font-size="16" font-weight="700">最後，如果這次搞砸了，我怎麼修復？</text>
+                <text x="152" y="388" fill="#475569" font-size="13">預備情緒標記、雙鏡頭與四步修復公式，確保過去不壟斷未來。</text>
+              </svg>
+            </div>
+
+            <!-- Right: Redrawn Artwork + Immediate Team Actions -->
+            <div style="display:flex;flex-direction:column;gap:14px;">
+              <div style="border-radius:10px;overflow:hidden;border:1px solid #CBD5E1;position:relative;height:175px;">
+                <img src="../assets/images/hero-dialogue-bridge.jpg" alt="直抵人心：溝通四原則光橋意象（重新繪製）" style="width:100%;height:100%;object-fit:cover;display:block;" />
+                <div style="position:absolute;inset:auto 0 0 0;padding:8px 12px;background:linear-gradient(transparent, rgba(7,20,38,0.9));color:#FDE6B8;font-size:12px;font-weight:700;">
+                  清晰 · 友善 · 應變 · 重啟 — 在重要時刻托住你的八個字
+                </div>
+              </div>
+
+              <div class="mc-card dark" style="flex:1;gap:8px;">
+                <div class="card-label">IMMEDIATE ACTIONS · 自己與團隊立刻落地</div>
+                <h3 class="card-title" style="font-size:16px;margin-bottom:4px;">明天上班就能啟動的三件事</h3>
+                <ul class="mc-list" style="font-size:13px;">
+                  <li><strong>專案會清零含混詞：</strong>把「盡快、協同、創新」全部翻譯成具體交付物與日期。</li>
+                  <li><strong>下場關鍵對話前 1 分鐘：</strong>打開知識庫首頁「一分鐘四問互動器」填完再進會議室。</li>
+                  <li><strong>升級團隊復盤道歉詞：</strong>全面以「擔責→認感受→補救防重演→面向未來」四步修復取代敷衍道歉。</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-footer">
+          <span class="slide-takeaway">清晰、友善、應變、重啟——願這八個字在每個關鍵時刻穩穩托住你與團隊。</span>
+          <span class="page-num">15 / 15</span>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- 3-Part McKinsey Speaker Notes Drawer -->
+  <aside class="notes-drawer" aria-label="三段式講者備忘稿">
+    <div class="notes-header">
+      <span id="notes-slide-label">Slide 01 / 15 — 講者三段式備忘稿（麥肯錫導讀標準）</span>
+      <button type="button" class="ctrl-btn" id="notes-close" style="padding:3px 10px;font-size:11.5px;">收合 (N)</button>
+    </div>
+    <div class="notes-grid">
+      <div class="note-col">
+        <h4>① 本頁結論 (Core Takeaway)</h4>
+        <p id="note-conclusion"></p>
+      </div>
+      <div class="note-col">
+        <h4>② 補充說明與來源案例 (Source Evidence)</h4>
+        <p id="note-evidence"></p>
+      </div>
+      <div class="note-col">
+        <h4>③ 下一頁轉場 (Transition)</h4>
+        <p id="note-transition"></p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Slide Grid Overview & In-Deck Search Overlay -->
+  <div class="grid-overlay" id="grid-overlay" role="dialog" aria-modal="true" aria-label="簡報全覽與頁內檢索">
+    <div class="grid-overlay-head">
+      <div>
+        <strong style="font-size:18px;">簡報 15 頁總覽 ✕ 頁內關鍵字篩選</strong>
+        <span style="margin-left:12px;font-size:13px;color:rgba(255,255,255,0.65);">點擊任一卡片即時跳轉 · 按 Esc 關閉</span>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center;">
+        <input type="search" id="grid-filter-input" class="grid-filter-input" placeholder="篩選本簡報頁碼或關鍵字（如 TKI、費翔、重啟）..." />
+        <button type="button" class="ctrl-btn" id="grid-close">關閉 (Esc)</button>
+      </div>
+    </div>
+    <div class="thumbs-grid" id="thumbs-grid"></div>
+  </div>
+
+  <script src="../assets/js/deck.js"></script>
+</body>
+</html>
