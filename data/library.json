@@ -1,15 +1,15 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "portalName": "溝通交流知識庫",
   "portalEnglish": "Communication & Dialogue Knowledge Hub",
   "tagline": "以麥肯錫結構化思維萃取溝通經典，打造個人與團隊共用、可即時檢索與持續擴充的對話智庫",
   "audience": "個人修煉 ✕ 團隊協作 ✕ 跨部門對齊",
-  "updatedAt": "2026-11-23",
+  "updatedAt": "2026-11-24",
   "categories": [
     { "id": "all", "name": "全部主題", "icon": "grid" },
     { "id": "principles", "name": "核心原則與衝突管理", "icon": "compass" },
+    { "id": "rapport", "name": "人際連結與社交細節", "icon": "spark" },
     { "id": "listening", "name": "傾聽與影響力信譽", "icon": "ear" },
-    { "id": "rapport", "name": "人際破冰與社交細節", "icon": "spark" },
     { "id": "negotiation", "name": "高難度談判與協作", "icon": "scale" }
   ],
   "hotKeywords": [
@@ -17,15 +17,15 @@
     "TKI 衝突模型",
     "策略性模糊",
     "交易成本",
-    "安全感結餘",
-    "情緒標記",
     "四步修復",
-    "一分鐘四問",
-    "大事不多",
-    "以直報怨",
-    "解碼成本",
-    "陳燕萍",
-    "費翔"
+    "友誼四維度",
+    "全能朋友",
+    "亞當·格蘭特",
+    "路易斯與托爾金",
+    "NASA 太空站",
+    "人性介面",
+    "人同此心",
+    "一分鐘四問"
   ],
   "books": [
     {
@@ -85,8 +85,61 @@
     },
     {
       "id": "book-002",
-      "slug": "five-levels-of-listening",
+      "slug": "vibe-friendship-interfaces",
       "code": "COMM-02",
+      "title": "《氛圍 Vibe》",
+      "subtitle": "孤獨時代的強連接秘訣：為何一半「朋友」不認你是朋友？",
+      "author": "亞當·格蘭特（Adam Grant）著 ｜ 李南南親述解讀",
+      "sourceMeta": "《紐約時報》暢銷榜首新作｜得到頭條 1047 期（11 分 58 秒）",
+      "category": "rapport",
+      "categoryLabel": "人際連結與社交細節",
+      "status": "ready",
+      "badge": "最新上架簡報",
+      "readingTime": "10 分鐘導讀",
+      "slidesCount": 12,
+      "svgCount": 7,
+      "coverImage": "assets/images/book-vibe-cover-art.jpg",
+      "deckUrl": "decks/vibe-friendship-interfaces.html",
+      "publishedDate": "2026-11-24",
+      "coreThesis": "你的朋友名單裡約有一半是單向認定；病灶在於「朋友」一詞太含糊。把關係拆為「熟人、戰友、玩伴、知己」四維介面並在對的場合切換，方能破除「全能朋友」幻覺、成就跨界強協作。",
+      "keyPillars": [
+        { "label": "熟人", "desc": "核心為便利與互惠，鄰居／順路同事彼此搭把手" },
+        { "label": "戰友", "desc": "核心為共同目標與靠譜交付，不必下班當密友" },
+        { "label": "玩伴", "desc": "核心為共同興趣與快樂，球友／劇搭子同頻相聚" },
+        { "label": "知己", "desc": "核心為深度情感與價值觀，稀缺的託妻獻子交情" }
+      ],
+      "teamActions": [
+        {
+          "key": "comm02-interface-audit",
+          "title": "盤點 5 位往來對象，對齊「四維關係介面」",
+          "desc": "標出彼此屬於熟人、戰友、玩伴或知己，放下強求單一人選扮演全能朋友的過度期待。",
+          "owner": "個人修煉"
+        },
+        {
+          "key": "comm02-comrade-focus",
+          "title": "異質團隊協作優先鎖定「戰友介面」",
+          "desc": "效法 NASA 太空站搭檔與墨水社：面對性格迥異的夥伴，在會議與專案中對準共同目標而非性格同頻。",
+          "owner": "團隊協作"
+        },
+        {
+          "key": "comm02-sincere-standard",
+          "title": "表達與簡報落實「自己真心認可」檢核",
+          "desc": "拒絶拿偽「受眾定位」交差，發佈方案或溝通前自問：這份內容連我自己都真心認可與被打動嗎？",
+          "owner": "個人＆主管"
+        }
+      ],
+      "modules": [
+        { "range": "P01–P03", "name": "50% 錯位與全篇骨架", "desc": "單向名單真相、研究跨度與「朋友」一詞的含糊病灶" },
+        { "range": "P04", "name": "友誼四維度模型", "desc": "熟人、戰友、玩伴、知己核心紐帶與全能幻覺拆解" },
+        { "range": "P05–P07", "name": "跨界經典實證", "desc": "路易斯✕托爾金、NASA 太空站搭檔與影壇黃金搭檔邊界" },
+        { "range": "P08–P09", "name": "人性介面與真誠標準", "desc": "多平台人性分置、偽受眾定位反思與人同此心準則" },
+        { "range": "P10–P12", "name": "脈絡矩陣與落地行動", "desc": "四維介面校準矩陣、原文邊界聲明與三步行動" }
+      ]
+    },
+    {
+      "id": "book-003",
+      "slug": "five-levels-of-listening",
+      "code": "COMM-03",
       "title": "《溝通的黃金法則》",
       "subtitle": "「聽話」的五個層次：溝通信譽的階梯",
       "author": "約翰・麥斯威爾（John C. Maxwell）",
@@ -111,15 +164,15 @@
       "modules": []
     },
     {
-      "id": "book-003",
+      "id": "book-004",
       "slug": "ten-comfortable-chat-details",
-      "code": "COMM-03",
+      "code": "COMM-04",
       "title": "《相處舒服的 10 個聊天細節》",
       "subtitle": "從「只談正事」到建立高好感度的人際脈絡複利",
       "author": "商業周刊職場專欄（Sofia 的人生筆記）",
       "sourceMeta": "本地知識庫已收錄原文筆記",
       "category": "rapport",
-      "categoryLabel": "人際破冰與社交細節",
+      "categoryLabel": "人際連結與社交細節",
       "status": "planned",
       "badge": "預留擴充插槽",
       "readingTime": "規劃中（10 分鐘版）",
@@ -137,15 +190,15 @@
       "modules": []
     },
     {
-      "id": "book-004",
+      "id": "book-005",
       "slug": "workplace-small-talk-introvert",
-      "code": "COMM-04",
+      "code": "COMM-05",
       "title": "《職場 Small Talk 的 3 個接話技巧》",
       "subtitle": "內向者（I 人）也能在職場自然破冰與延續對話的結構法則",
       "author": "遠見雜誌職場專題",
       "sourceMeta": "本地知識庫已收錄原文筆記",
       "category": "rapport",
-      "categoryLabel": "人際破冰與社交細節",
+      "categoryLabel": "人際連結與社交細節",
       "status": "planned",
       "badge": "預留擴充插槽",
       "readingTime": "規劃中（10 分鐘版）",

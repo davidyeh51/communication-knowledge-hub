@@ -236,7 +236,7 @@
 
     if (els.searchList) {
       if (matches.length === 0) {
-        els.searchList.innerHTML = `<div style="padding:18px;text-align:center;color:#64748B;">查無符合「${escapeHtml(q)}」的條目，建議改試「清晰」「TKI」「交易成本」「四步修復」「情緒標記」。</div>`;
+        els.searchList.innerHTML = `<div style="padding:18px;text-align:center;color:#64748B;">查無符合「${escapeHtml(q)}」的條目，建議改試「清晰」「TKI」「友誼四維度」「NASA」「全能朋友」「四步修復」。</div>`;
       } else {
         els.searchList.innerHTML = matches.map(({ item }) => `
           <a class="search-hit" href="${escapeHtml(item.url)}">
@@ -256,21 +256,36 @@
   /* ---------- Action Checkins & Team Notes (Supabase + Local) ---------- */
   async function renderActions() {
     if (!libraryData || !els.actionList) return;
-    const book = libraryData.books.find(b => b.slug === 'principles-of-communication');
-    if (!book) return;
+    const readyBooks = libraryData.books.filter(b => b.status === 'ready' && (b.teamActions || []).length > 0);
+    if (!readyBooks.length) return;
 
-    const { map } = await window.CommSync.getCheckins(book.slug);
-    els.actionList.innerHTML = book.teamActions.map(act => {
-      const checked = !!map[act.key];
-      return `
-        <label class="action-check-item ${checked ? 'done' : ''}">
-          <input type="checkbox" data-book="${escapeHtml(book.slug)}" data-key="${escapeHtml(act.key)}" ${checked ? 'checked' : ''}>
-          <div>
-            <div style="font-weight:700;font-size:14px;color:#0B1F3A;">${escapeHtml(act.title)} <span class="pill pill-slate" style="font-size:11px;margin-left:4px;">${escapeHtml(act.owner)}</span></div>
-            <div style="font-size:12.5px;color:#475569;margin-top:3px;">${escapeHtml(act.desc)}</div>
-          </div>
-        </label>
-      `;
+    const checkinMaps = await Promise.all(
+      readyBooks.map(async b => {
+        const res = await window.CommSync.getCheckins(b.slug);
+        return { slug: b.slug, map: res.map || {} };
+      })
+    );
+
+    const mapBySlug = Object.fromEntries(checkinMaps.map(item => [item.slug, item.map]));
+
+    els.actionList.innerHTML = readyBooks.map(book => {
+      const map = mapBySlug[book.slug] || {};
+      return book.teamActions.map(act => {
+        const checked = !!map[act.key];
+        return `
+          <label class="action-check-item ${checked ? 'done' : ''}">
+            <input type="checkbox" data-book="${escapeHtml(book.slug)}" data-key="${escapeHtml(act.key)}" ${checked ? 'checked' : ''}>
+            <div>
+              <div style="font-weight:700;font-size:14px;color:#0B1F3A;">
+                <span class="pill pill-navy" style="font-size:10.5px;padding:1px 6px;margin-right:4px;">${escapeHtml(book.code)}</span>
+                ${escapeHtml(act.title)}
+                <span class="pill pill-slate" style="font-size:11px;margin-left:4px;">${escapeHtml(act.owner)}</span>
+              </div>
+              <div style="font-size:12.5px;color:#475569;margin-top:3px;">${escapeHtml(act.desc)}</div>
+            </div>
+          </label>
+        `;
+      }).join('');
     }).join('');
   }
 
