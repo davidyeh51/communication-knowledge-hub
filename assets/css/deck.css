@@ -60,7 +60,8 @@ html, body {
 .deck-left {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
+  flex: 1;
   min-width: 0;
 }
 
@@ -102,7 +103,8 @@ html, body {
 .deck-controls {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 7px;
+  flex-shrink: 0;
 }
 
 .ctrl-btn {
@@ -118,6 +120,8 @@ html, body {
   font-weight: 600;
   cursor: pointer;
   font-family: inherit;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: all 0.15s;
 }
 
@@ -133,6 +137,8 @@ html, body {
   color: #FDE6B8;
   padding: 0 8px;
   font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .timer-pill {
@@ -144,6 +150,8 @@ html, body {
   border: 1px solid rgba(224, 168, 75, 0.35);
   color: #FDE6B8;
   cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 /* ---------- Progress Bar ---------- */
@@ -166,12 +174,9 @@ html, body {
 .stage-wrapper {
   height: calc(100vh - 57px);
   width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
-  padding: 16px 56px;
-  transition: padding-bottom 0.25s ease;
+  overflow: hidden;
+  transition: height 0.25s ease;
 }
 
 body.notes-open .stage-wrapper {
@@ -179,10 +184,13 @@ body.notes-open .stage-wrapper {
 }
 
 .stage-scaler {
+  position: absolute;
+  left: 50%;
+  top: 50%;
   width: 1280px;
   height: 720px;
-  position: relative;
   transform-origin: center center;
+  transform: translate(-50%, -50%) scale(1);
   box-shadow: 0 28px 80px rgba(0, 0, 0, 0.55);
   border-radius: 10px;
   overflow: hidden;

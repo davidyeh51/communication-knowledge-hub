@@ -24,10 +24,10 @@
   function scaleStage() {
     if (!els.scaler || !els.wrapper) return;
     const rect = els.wrapper.getBoundingClientRect();
-    const availW = Math.max(320, rect.width - 112);
+    const availW = Math.max(320, rect.width - 116);
     const availH = Math.max(200, rect.height - 28);
     const scale = Math.min(availW / 1280, availH / 720, 1.35);
-    els.scaler.style.transform = `scale(${scale})`;
+    els.scaler.style.transform = `translate(-50%, -50%) scale(${scale})`;
   }
 
   function renderNotes(slide) {
@@ -227,6 +227,7 @@
     }, { passive: true });
 
     window.addEventListener('resize', scaleStage);
+    document.addEventListener('fullscreenchange', () => setTimeout(scaleStage, 80));
     window.addEventListener('hashchange', () => goToSlide(parseHash(), false));
 
     goToSlide(parseHash(), false);
